@@ -183,8 +183,8 @@
         "label": "Style",
         "options": [
           {
-            "name": "Info Cards",
-            "value": "info-cards"
+            "name": "Component 1",
+            "value": "component-1"
           }
         ]
       }
