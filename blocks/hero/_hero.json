@@ -32,8 +32,8 @@
         },
         {
           "component": "container",
-          "label": "Desktop Media",
-          "name": "desktopMedia",
+          "label": "Images",
+          "name": "imagesContainer",
           "valueType": "string",
           "collapsible": true,
           "fields": [
@@ -42,97 +42,65 @@
               "valueType": "string",
               "name": "desktopImage",
               "label": "Desktop Image",
-              "multi": false,
-              "visible": {
-                "property": "mediaType",
-                "value": "image"
-              }
+              "multi": false
             },
             {
               "component": "text",
               "valueType": "string",
               "name": "desktopImageAlt",
               "label": "Desktop Image Alt",
-              "value": "",
-              "visible": {
-                "property": "mediaType",
-                "value": "image"
-              }
+              "value": ""
             },
-            {
-              "component": "reference",
-              "valueType": "string",
-              "name": "desktopVideo",
-              "label": "Desktop Video",
-              "multi": false,
-              "visible": {
-                "property": "mediaType",
-                "value": "video"
-              }
-            },
-            {
-              "component": "text",
-              "valueType": "string",
-              "name": "desktopVideoAlt",
-              "label": "Desktop Video Alt",
-              "value": "",
-              "visible": {
-                "property": "mediaType",
-                "value": "video"
-              }
-            }
-          ]
-        },
-        {
-          "component": "container",
-          "label": "Mobile Media",
-          "name": "mobileMedia",
-          "valueType": "string",
-          "collapsible": true,
-          "fields": [
             {
               "component": "reference",
               "valueType": "string",
               "name": "mobileImage",
               "label": "Mobile Image",
-              "multi": false,
-              "visible": {
-                "property": "mediaType",
-                "value": "image"
-              }
+              "multi": false
             },
             {
               "component": "text",
               "valueType": "string",
               "name": "mobileImageAlt",
               "label": "Mobile Image Alt",
-              "value": "",
-              "visible": {
-                "property": "mediaType",
-                "value": "image"
-              }
+              "value": ""
+            }
+          ]
+        },
+        {
+          "component": "container",
+          "label": "Videos",
+          "name": "videosContainer",
+          "valueType": "string",
+          "collapsible": true,
+          "fields": [
+            {
+              "component": "reference",
+              "valueType": "string",
+              "name": "desktopVideo",
+              "label": "Desktop Video",
+              "multi": false
+            },
+            {
+              "component": "text",
+              "valueType": "string",
+              "name": "desktopVideoAlt",
+              "label": "Desktop Video Alt",
+              "value": ""
             },
             {
               "component": "reference",
               "valueType": "string",
               "name": "mobileVideo",
               "label": "Mobile Video",
-              "multi": false,
-              "visible": {
-                "property": "mediaType",
-                "value": "video"
-              }
+              "multi": false
             },
             {
               "component": "text",
               "valueType": "string",
               "name": "mobileVideoAlt",
               "label": "Mobile Video Alt",
-              "value": "",
-              "visible": {
-                "property": "mediaType",
-                "value": "video"
-              }
+              "value": ""
             }
           ]
         },
