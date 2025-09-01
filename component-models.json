@@ -193,18 +193,126 @@
     "id": "hero",
     "fields": [
       {
-        "component": "reference",
+        "component": "radio-group",
+        "label": "Media Type",
+        "name": "mediaType",
         "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
+        "options": [
+          {
+            "name": "Image",
+            "value": "image"
+          },
+          {
+            "name": "Video",
+            "value": "video"
+          }
+        ]
       },
       {
-        "component": "text",
+        "component": "container",
+        "label": "Desktop Media",
+        "name": "desktopMedia",
         "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt",
-        "value": ""
+        "collapsible": true,
+        "fields": [
+          {
+            "component": "reference",
+            "valueType": "string",
+            "name": "desktopImage",
+            "label": "Desktop Image",
+            "multi": false,
+            "visible": {
+              "property": "mediaType",
+              "value": "image"
+            }
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "desktopImageAlt",
+            "label": "Desktop Image Alt",
+            "value": "",
+            "visible": {
+              "property": "mediaType",
+              "value": "image"
+            }
+          },
+          {
+            "component": "reference",
+            "valueType": "string",
+            "name": "desktopVideo",
+            "label": "Desktop Video",
+            "multi": false,
+            "visible": {
+              "property": "mediaType",
+              "value": "video"
+            }
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "desktopVideoAlt",
+            "label": "Desktop Video Alt",
+            "value": "",
+            "visible": {
+              "property": "mediaType",
+              "value": "video"
+            }
+          }
+        ]
+      },
+      {
+        "component": "container",
+        "label": "Mobile Media",
+        "name": "mobileMedia",
+        "valueType": "string",
+        "collapsible": true,
+        "fields": [
+          {
+            "component": "reference",
+            "valueType": "string",
+            "name": "mobileImage",
+            "label": "Mobile Image",
+            "multi": false,
+            "visible": {
+              "property": "mediaType",
+              "value": "image"
+            }
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "mobileImageAlt",
+            "label": "Mobile Image Alt",
+            "value": "",
+            "visible": {
+              "property": "mediaType",
+              "value": "image"
+            }
+          },
+          {
+            "component": "reference",
+            "valueType": "string",
+            "name": "mobileVideo",
+            "label": "Mobile Video",
+            "multi": false,
+            "visible": {
+              "property": "mediaType",
+              "value": "video"
+            }
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "mobileVideoAlt",
+            "label": "Mobile Video Alt",
+            "value": "",
+            "visible": {
+              "property": "mediaType",
+              "value": "video"
+            }
+          }
+        ]
       },
       {
         "component": "richtext",
