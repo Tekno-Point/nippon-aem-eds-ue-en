@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/nippon/:/",
-    "/content/nippon/configuration:/.helix/config.json",
-    "/content/nippon/metadata:/metadata.json"
+    "/content/nippon-amc/:/",
+    "/content/nippon-amc/configuration:/.helix/config.json",
+    "/content/nippon-amc/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/nippon/"
+    "/content/nippon-amc/"
   ]
 }
