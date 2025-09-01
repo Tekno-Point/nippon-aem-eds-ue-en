@@ -216,11 +216,11 @@ main img {
   height: auto;
 }
 
-.icon {
+/* .icon {
   display: inline-block;
   height: 24px;
   width: 24px;
-}
+} */
 
 .icon img {
   height: 100%;
