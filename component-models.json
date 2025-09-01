@@ -176,6 +176,17 @@
         "name": "rows",
         "value": "",
         "label": "Rows"
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Info Cards",
+            "value": "info-cards"
+          }
+        ]
       }
     ]
   },
