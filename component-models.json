@@ -206,10 +206,6 @@
             "value": "has-bg-ovrl"
           },
           {
-            "name": "Height Full",
-            "value": "hero-height-full"
-          },
-          {
             "name": "Height Half",
             "value": "hero-height-half"
           }
