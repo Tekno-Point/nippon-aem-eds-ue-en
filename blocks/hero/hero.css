@@ -31,10 +31,10 @@
 
 @media (width >=900px) {
   .hero {
-    height: calc(100vh-var(--nav-height));
+    height: calc(100vh - var(--nav-height));
   }
 
-  .hero.hero-height-half{
+  .hero.hero-height-half {
     height: 60vh;
   }
 }
@@ -43,7 +43,7 @@
   animation: appear 5s ease-out forwards;
 }
 
-.hero:last-child {
+.hero div:last-child {
   position: absolute;
   width: 100%;
   text-align: center;
