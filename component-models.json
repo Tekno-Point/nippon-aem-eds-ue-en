@@ -183,8 +183,8 @@
         "label": "Style",
         "options": [
           {
-            "name": "Column Style1",
-            "value": "style-column1"
+            "name": "Style Column",
+            "value": "style-column"
           }
         ]
       }
