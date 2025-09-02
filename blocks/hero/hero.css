@@ -30,11 +30,11 @@
 }
 
 @media (width >=900px) {
-  .hero {
+  .hero .hero-wrapper {
     height: calc(100vh-var(--nav-height));
   }
 
-  .hero.hero-height-half {
+  .hero.hero-height-half .hero-wrapper {
     height: 60vh;
   }
 }
