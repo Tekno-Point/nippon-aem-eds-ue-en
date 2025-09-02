@@ -455,3 +455,84 @@
     object-fit: contain;
   }
 }
+.section.columns-container .style-column4 {
+  max-width: 1222px;
+  margin: 0 auto;
+}
+
+.section.columns-container .style-column4 > div > div:nth-child(1) {
+  width: 32.5%;
+}
+
+.section.columns-container .style-column4 > div > div:nth-child(1) h2 {
+  font-size: 48px;
+  line-height: 68px;
+  font-weight: 300;
+  font-family: "poppin light";
+}
+
+.section.columns-container .style-column4 > div > div:nth-child(2) {
+  width: 67.5%;
+}
+
+.section.columns-container .style-column4 > div > div:nth-child(2) p {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  font-family: "poppin regular";
+}
+
+.section.columns-container .style-column4 > div > div:nth-child(2) ul {
+  padding: 12px 5px 12px 10px;
+  border: 1px solid rgb(224, 48, 40);
+  width: 191px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.section.columns-container .style-column4 > div > div:nth-child(2) ul li {
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  font-family: "poppin regular";
+  color: rgb(224, 48, 40);
+}
+
+.section.columns-container .style-column4 > div > div:nth-child(2) ul li img {
+  width: 20px;
+  height: 16px;
+  margin-top: 3px;
+}
+
+@media (width <= 768px) {
+  .section.columns-container .style-column4 {
+    max-width: 1222px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  .section.columns-container .style-column4 > div > div:nth-child(1) {
+    width: 100%;
+  }
+  .section.columns-container .style-column4 > div > div:nth-child(1) h2 {
+    font-size: 29px;
+    line-height: 41px;
+  }
+  .section.columns-container .style-column4 > div > div:nth-child(2) {
+    width: 100%;
+  }
+  .section.columns-container .style-column4 > div > div:nth-child(2) p {
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 16px;
+  }
+  .section.columns-container .style-column4 > div > div:nth-child(2) ul {
+    width: 178px;
+  }
+  .section.columns-container .style-column4 > div > div:nth-child(2) ul li img {
+    width: 20px;
+    height: 16px;
+    margin-top: 3px;
+  }
+}
