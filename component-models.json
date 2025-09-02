@@ -205,6 +205,10 @@
           {
             "name": "Style Column 3",
             "value": "style-column3"
+          },
+          {
+            "name": "Style Column 4",
+            "value": "style-column4"
           }
         ]
       }
