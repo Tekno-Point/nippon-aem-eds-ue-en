@@ -261,25 +261,27 @@
             "multi": false
           },
           {
-            "component": "text",
-            "valueType": "string",
-            "name": "desktopVideoAlt",
-            "label": "Desktop Video Alt",
-            "value": ""
-          },
-          {
             "component": "reference",
             "valueType": "string",
             "name": "mobileVideo",
             "label": "Mobile Video",
             "multi": false
+          }
+        ]
+      },
+      {
+        "component": "checkbox-group",
+        "label": "Animations",
+        "name": "animations",
+        "valueType": "string[]",
+        "options": [
+          {
+            "name": "Appear Animation",
+            "value": "animate-appear"
           },
           {
-            "component": "text",
-            "valueType": "string",
-            "name": "mobileVideoAlt",
-            "label": "Mobile Video Alt",
-            "value": ""
+            "name": "Backgorund overlay",
+            "value": "bg-overlay"
           }
         ]
       },
