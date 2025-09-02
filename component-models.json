@@ -179,12 +179,12 @@
       },
       {
         "component": "multiselect",
-        "name": "style",
+        "name": "classes",
         "label": "Style",
         "options": [
           {
-            "name": "Component 1",
-            "value": "component-1"
+            "name": "Column Style1",
+            "value": "style-column1"
           }
         ]
       }
