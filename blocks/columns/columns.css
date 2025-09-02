@@ -208,4 +208,9 @@
     font-size: 16px;
     line-height: 27px;
   }
+}
+.section.width-container .default-content-wrapper {
+  max-width: 1222px;
+  margin: 0 auto;
+  padding: 0;
 }/*# sourceMappingURL=columns.css.map */

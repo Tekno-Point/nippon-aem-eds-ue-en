@@ -138,6 +138,10 @@
             "value": "highlight"
           },
           {
+            "name": "Legacy Style",
+            "value": "legacy-style"
+          },
+          {
             "name": "Width Container",
             "value": "width-container"
           }
