@@ -27,11 +27,19 @@
           "options": [
             {
               "name": "Appear Animation",
-              "value": "has:appr-ani"
+              "value": "has-appr-ani"
             },
             {
               "name": "Bg Overlay",
-              "value": "has:bg-ovrl"
+              "value": "has-bg-ovrl"
+            },
+            {
+              "name": "Height Full",
+              "value": "hero-height-full"
+            },
+            {
+              "name": "Height Half",
+              "value": "hero-height-half"
             }
           ]
         },

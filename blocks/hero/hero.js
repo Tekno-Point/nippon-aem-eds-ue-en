@@ -2,7 +2,9 @@ import { div, video, source } from '../../scripts/dom-helper.js';
 
 function getVideos(url) {
   return video(
-    { autoplay: true, muted: true, playsinline: true },
+    {
+      class: 'size-full', autoplay: true, muted: true, playsinline: true,
+    },
     source({ src: url, type: 'video/mp4' }, 'Your browser does not support the video tag.'),
   );
 }
@@ -27,12 +29,12 @@ export default function decorate(block) {
   const [richText] = blockChildrens.slice(5);
 
   if (isVideo) {
-    const [deskVid, mobVid] = blockChildrens.slice(3, 5).map((c) => c.querySelector('a').getAttribute('href'));
+    const [deskVid, mobVid] = blockChildrens.slice(3, 5).map((c) => c.querySelector('a')?.getAttribute('href'));
     const videoUrl = isDesktop.matches ? deskVid : mobVid || deskVid;
     const videoEl = getVideos(videoUrl);
     block.textContent = '';
     block.append(videoEl, richText);
-    if (block.classlist.contains('has:bg-ovrl')) {
+    if (block.classList.contains('has:bg-ovrl')) {
       block.append(div({ class: 'hero-bg-overlay' }, ''));
     }
   } else {

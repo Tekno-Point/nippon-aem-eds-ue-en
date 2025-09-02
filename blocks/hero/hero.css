@@ -36,7 +36,15 @@
   }
 }
 
-.has\:appr-ani video {
+.hero-height-full {
+  height: 100vh;
+}
+
+.hero-height-half{
+  height: 80vh;
+}
+
+.has-appr-ani video {
   animation: appear 0.5s ease-out forwards;
 }
 
@@ -48,4 +56,9 @@
   100% {
     transform: scale(1);
   }
+}
+
+.size-full {
+  width: 100%;
+  height: 100%;
 }
