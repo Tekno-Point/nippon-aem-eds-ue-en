@@ -235,5 +235,24 @@
   max-width: 1222px;
   margin: 0 auto;
   padding: 0;
+  position: relative;
 }
 
+.section.legacy-style .default-content-wrapper h2{
+  font-size: 48px;
+  line-height: 68px;
+  font-weight: 300;
+  font-family: 'poppin light';
+  color: rgb(0 0 0);
+  text-align: center;
+}
+
+.section.legacy-style .default-content-wrapper img{
+  width: 319px;
+  height: 274px;
+  position: absolute;
+  right: -12%;
+  top: 0;
+  object-fit: cover;
+  align-self: stretch;
+}
