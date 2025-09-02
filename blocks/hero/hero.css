@@ -41,6 +41,7 @@
 
 .has-appr-ani video {
   animation: appear 5s ease-out forwards;
+  transform-origin: bottom;
 }
 
 .hero div:last-child {
