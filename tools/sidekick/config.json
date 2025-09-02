@@ -2,18 +2,9 @@
   "project": "EDS Accessibility Mode Sidekick Extension",
   "plugins": [
     {
-      "id": "accessibility-mode",
-      "title": "Accessibility Mode",
-      "environments": [
-        "preview",
-        "dev"
-      ],
-      "event": "accessibility-mode"
-    },
-    {
       "id": "library",
       "title": "Library",
-      "url": "https://main--internal-aem-eds-poc-en--tekno-point.aem.live/tools/library.html"
+      "url": "https://main--nippon-aem-eds-ue-en--tekno-point.aem.live/tools/library.html"
     }
   ]
 }

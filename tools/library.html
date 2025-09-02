@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
     <meta name="Description" content="AEM Sidekick Library" />
-    <meta name="robots" content="noindex" />
+    <meta name="robots" content="noindex,nofollow" />
     <base href="/" />
 
     <style>
@@ -33,7 +33,7 @@
     <script>
       const library = document.createElement('sidekick-library')
       library.config = {
-        base: '/library.json',
+        base: '/block-list/library.json',
       }
 
       document.body.prepend(library)
