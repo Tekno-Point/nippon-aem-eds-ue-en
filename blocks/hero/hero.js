@@ -6,7 +6,7 @@ function getVideos(url) {
     {
       class: 'size-full', autoplay: true, muted: true, playsinline: true,
     },
-    source({ src: `${PUBLISH_DOMAIN}url`, type: 'video/mp4' }, 'Your browser does not support the video tag.'),
+    source({ src: PUBLISH_DOMAIN + url, type: 'video/mp4' }, 'Your browser does not support the video tag.'),
   );
 }
 
