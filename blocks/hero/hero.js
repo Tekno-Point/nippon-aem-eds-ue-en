@@ -22,7 +22,7 @@ export default function decorate(block) {
 }
 
 function getVideos(url) {
-  return video({"autoplay": true,  "muted": true, "loop": true, "playsinline": true},
+  return video({"autoplay": true,  "muted": true, "playsinline": true},
     source({ src: url, type: 'video/mp4' }, "Your browser does not support the video tag.")
   );
 }
