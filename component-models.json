@@ -198,98 +198,10 @@
         "label": "Style",
         "options": [
           {
-            "name": "Appear Animation",
-            "value": "appr-ani"
-          },
-          {
-            "name": "Bg Overlay",
-            "value": "bg-ovrl"
+            "name": "Highlight",
+            "value": "highlight"
           }
         ]
-      },
-      {
-        "component": "radio-group",
-        "label": "Media Type",
-        "name": "mediaType",
-        "valueType": "string",
-        "required": true,
-        "options": [
-          {
-            "name": "Image",
-            "value": "image"
-          },
-          {
-            "name": "Video",
-            "value": "video"
-          }
-        ]
-      },
-      {
-        "component": "container",
-        "label": "Images",
-        "name": "imagesContainer",
-        "valueType": "string",
-        "collapsible": true,
-        "fields": [
-          {
-            "component": "reference",
-            "valueType": "string",
-            "name": "desktopImage",
-            "label": "Desktop Image",
-            "multi": false
-          },
-          {
-            "component": "text",
-            "valueType": "string",
-            "name": "desktopImageAlt",
-            "label": "Desktop Image Alt",
-            "value": ""
-          },
-          {
-            "component": "reference",
-            "valueType": "string",
-            "name": "mobileImage",
-            "label": "Mobile Image",
-            "multi": false
-          },
-          {
-            "component": "text",
-            "valueType": "string",
-            "name": "mobileImageAlt",
-            "label": "Mobile Image Alt",
-            "value": ""
-          }
-        ]
-      },
-      {
-        "component": "container",
-        "label": "Videos",
-        "name": "videosContainer",
-        "valueType": "string",
-        "collapsible": true,
-        "fields": [
-          {
-            "component": "reference",
-            "valueType": "string",
-            "name": "desktopVideo",
-            "label": "Desktop Video",
-            "multi": false
-          },
-          {
-            "component": "reference",
-            "valueType": "string",
-            "name": "mobileVideo",
-            "label": "Mobile Video",
-            "multi": false
-          }
-        ]
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
       }
     ]
   }
