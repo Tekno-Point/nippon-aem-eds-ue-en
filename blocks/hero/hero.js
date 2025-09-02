@@ -32,6 +32,9 @@ export default function decorate(block) {
     const videoEl = getVideos(videoUrl);
     block.textContent = '';
     block.append(videoEl, richText);
+    if (block.classlist.contains('has:bg-ovrl')) {
+      block.append(div({ class: 'hero-bg-overlay' }, ''));
+    }
   } else {
     const [deskImg, mobImg] = blockChildrens.slice(1, 3);
     const img = getImg(isDesktop, deskImg, mobImg);
