@@ -142,6 +142,10 @@
             "value": "legacy-style"
           },
           {
+            "name": "Invest Style",
+            "value": "invest-style"
+          },
+          {
             "name": "Width Container",
             "value": "width-container"
           }
@@ -197,6 +201,10 @@
            {
             "name": "Style Column 2",
             "value": "style-column2"
+          },
+          {
+            "name": "Style Column 3",
+            "value": "style-column3"
           }
         ]
       }
