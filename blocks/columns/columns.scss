@@ -397,3 +397,107 @@
 }
 
 // Column Component 3
+.section.invest-style{
+  background-color:rgb(245 245 245 / 100%) ;
+  padding:100px 0;
+}
+
+.section.invest-style .default-content-wrapper h2{
+  font-size: 40px;
+  line-height: 68px;
+  font-weight: 300;
+  font-family: 'poppin light';
+  text-align: center;
+}
+
+.section.columns-container .style-column3{
+     max-width: 1222px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.section.columns-container .style-column3 > div{
+  gap: 20px;
+  align-items: center;
+}
+
+.section.columns-container .style-column3 > div > div:nth-child(1){
+  width: 50%;
+}
+
+  .section.columns-container .style-column3 > div:nth-child(1)  h2{
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 400;
+    font-family: 'poppin regular';
+  }
+
+  .section.columns-container .style-column3 > div:nth-child(1) p{
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+    font-family: 'poppin regular';
+    margin-top: 20px;
+  }
+
+  .section.columns-container .style-column3 > div > div:nth-child(2){
+  width: 50%;
+}
+
+.section.columns-container .style-column3 >div > div:nth-child(2) img{
+  width: 611px;
+  height: 329px;
+  object-fit: contain;
+}
+
+@media (width <= 768px){
+    .section.invest-style{
+  background-color:rgb(245 245 245 / 100%) ;
+  padding:20px 0 42px;
+}
+
+.section.invest-style .default-content-wrapper h2{
+  font-size: 28px;
+  line-height: 41px;
+  text-align: center;
+}
+
+.section.columns-container .style-column3{
+     max-width: 1222px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0 16px;
+}
+
+.section.columns-container .style-column3 > div{
+  gap: 20px;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.section.columns-container .style-column3 > div > div:nth-child(1){
+  width: 100%;
+}
+
+  .section.columns-container .style-column3 > div:nth-child(1)  h2{
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .section.columns-container .style-column3 > div:nth-child(1) p{
+    font-size: 16px;
+    line-height: 34px;
+  }
+
+  .section.columns-container .style-column3 > div > div:nth-child(2){
+  width: 100%;
+}
+
+.section.columns-container .style-column3 >div > div:nth-child(2) img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+}
+
+// Column component 4
