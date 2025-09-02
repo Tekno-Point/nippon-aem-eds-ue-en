@@ -9,8 +9,7 @@
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
               "name": "Hero",
-              "model": "hero",
-              "mediaType": "video"
+              "model": "hero"
             }
           }
         }
@@ -26,9 +25,16 @@
           "label": "Media Type",
           "name": "mediaType",
           "valueType": "string",
+          "required": true,
           "options": [
-            { "name": "Image", "value": "image" },
-            { "name": "Video", "value": "video" }
+            {
+              "name": "Image",
+              "value": "image"
+            },
+            {
+              "name": "Video",
+              "value": "video"
+            }
           ]
         },
         {
@@ -117,4 +123,3 @@
   ],
   "filters": []
 }
-    

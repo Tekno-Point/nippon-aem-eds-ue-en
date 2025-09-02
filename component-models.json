@@ -197,6 +197,7 @@
         "label": "Media Type",
         "name": "mediaType",
         "valueType": "string",
+        "required": true,
         "options": [
           {
             "name": "Image",
