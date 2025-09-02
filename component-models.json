@@ -199,11 +199,11 @@
         "options": [
           {
             "name": "Appear Animation",
-            "value": "has:appr-ani"
+            "value": "has-appr-ani"
           },
           {
             "name": "Bg Overlay",
-            "value": "has:bg-ovrl"
+            "value": "has-bg-ovrl"
           }
         ]
       },
