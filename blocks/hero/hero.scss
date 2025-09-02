@@ -68,6 +68,10 @@ $color_2: white;
 	height: 100%;
 }
 
+.hero[data-aue-resource] {
+  height: unset !important;
+}
+
 @media (width >=900px) {
 	.hero {
 		height: calc(100vh - var(--nav-height));
