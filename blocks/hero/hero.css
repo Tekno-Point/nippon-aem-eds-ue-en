@@ -30,13 +30,13 @@
 }
 
 @media (width >=900px) {
-  .hero {
+  /* .hero {
     height: calc(100vh - var(--nav-height));
   }
 
   .hero.hero-height-half {
     height: 60vh;
-  }
+  } */
 }
 
 .has-appr-ani video {
