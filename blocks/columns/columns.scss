@@ -256,3 +256,28 @@
   object-fit: cover;
   align-self: stretch;
 }
+
+.section.columns-container .style-column2{
+  max-width: 1222px;
+  margin: 0 auto;
+}
+
+.section.columns-container .style-column2 h2{
+  display: flex;
+  align-items: flex-start;
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: 300;
+  font-family: 'poppin light';
+  color: rgb(0 0 0);
+}
+
+.section.columns-container .style-column2 h2 .icon-legacyfav{
+  display: inline-block;
+  margin-top: 2px;
+}
+
+.section.columns-container .style-column2 h2 .icon-legacyfav img{
+  width: 24px;
+  height: 30px;
+}
