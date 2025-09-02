@@ -33,10 +33,10 @@
   .hero {
     height: calc(100vh-var(--nav-height));
   }
-}
 
-.hero-height-half {
-  height: 80vh;
+  .hero.hero-height-half {
+    height: 60vh;
+  }
 }
 
 .has-appr-ani video {
