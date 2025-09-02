@@ -1,3 +1,4 @@
+import { PUBLISH_DOMAIN } from '../../scripts/config.js';
 import { div, video, source } from '../../scripts/dom-helper.js';
 
 function getVideos(url) {
@@ -5,7 +6,7 @@ function getVideos(url) {
     {
       class: 'size-full', autoplay: true, muted: true, playsinline: true,
     },
-    source({ src: url, type: 'video/mp4' }, 'Your browser does not support the video tag.'),
+    source({ src: `${PUBLISH_DOMAIN}url`, type: 'video/mp4' }, 'Your browser does not support the video tag.'),
   );
 }
 
