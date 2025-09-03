@@ -5,6 +5,12 @@
       "id": "library",
       "title": "Library",
       "url": "https://main--nippon-aem-eds-ue-en--tekno-point.aem.live/tools/library.html"
+    },
+    {
+      "id": "seo-checker",
+      "title": "SEO Checker",
+      "environments": [ "preview", "dev","live" ],
+      "event": "seo-checker"
     }
   ]
 }
