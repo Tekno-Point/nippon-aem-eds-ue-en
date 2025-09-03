@@ -25,12 +25,13 @@
   width: 100%;
   height: 100%;
 }
-.hero div:last-child {
+.hero .richtext {
   position: absolute;
   width: 100%;
   text-align: center;
   bottom: 10%;
   color: white;
+  z-index: 1;
 }
 .hero .hero-bg-overlay {
   position: absolute;
@@ -39,12 +40,14 @@
   width: 100%;
   height: 100%;
   transform-origin: bottom;
-  animation: appear 1s ease-in-out;
+  animation: appear ease-out forwards;
+  animation-duration: 5s;
   background: linear-gradient(to bottom, transparent, black);
 }
 
-.has-appr-ani video {
-  animation: appear 5s ease-out forwards;
+.has-appr-ani video, .has-appr-ani picture {
+  animation: appear ease-out forwards;
+  animation-duration: 5s;
   transform-origin: bottom;
   object-fit: cover;
 }
@@ -62,10 +65,45 @@
   .hero {
     height: calc(100vh - var(--nav-height));
   }
-  .hero.hero-height-half {
+}
+/* layout half-image and text description */
+.hero-layout-half picture {
+  min-height: 50vh;
+  position: unset;
+}
+.hero-layout-half .richtext {
+  position: unset;
+  color: black;
+}
+.hero-layout-half .richtext > div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 80%;
+  flex: 1;
+  margin-inline: auto;
+  padding: 1rem;
+  text-align: left;
+}
+.hero-layout-half .richtext > div h1 {
+  flex: 1;
+  color: black;
+}
+.hero-layout-half .richtext > div p {
+  flex: 1;
+}
+
+@media (width >= 900px) {
+  .hero-layout-half picture {
     height: 60vh;
+    display: block;
+  }
+  .hero-layout-half .richtext > div {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
   }
 }
+/* layout half-image and text description end */
 @keyframes appear {
   0% {
     transform: scale(0);

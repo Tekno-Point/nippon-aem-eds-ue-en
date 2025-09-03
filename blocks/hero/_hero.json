@@ -34,8 +34,8 @@
               "value": "has-bg-ovrl"
             },
             {
-              "name": "Height Half",
-              "value": "hero-height-half"
+              "name": "Height Layout Half",
+              "value": "hero-layout-half"
             }
           ]
         },

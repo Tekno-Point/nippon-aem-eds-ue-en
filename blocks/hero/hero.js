@@ -28,6 +28,7 @@ export default function decorate(block) {
   const isDesktop = window.matchMedia('(min-width: 900px)');
   const isVideo = blockChildrens[0].textContent.trim() === 'video';
   const [richText] = blockChildrens.slice(5);
+  richText.classList.add('richtext');
 
   if (isVideo) {
     const [deskVid, mobVid] = blockChildrens.slice(3, 5).map((c) => c.querySelector('a')?.getAttribute('href'));
