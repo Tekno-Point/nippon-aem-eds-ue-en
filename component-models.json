@@ -243,6 +243,10 @@
           {
             "name": "Hero Layout Half",
             "value": "hero-layout-half"
+          },
+          {
+            "name": "Text Left",
+            "value": "text-left"
           }
         ]
       },

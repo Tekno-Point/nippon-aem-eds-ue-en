@@ -35,13 +35,22 @@ $appear_animation_duration: 5s;
 		height: 100%;
 	}
 
-  .richtext {
-			position: absolute;
-			width: 100%;
-			text-align: center;
-			bottom: 10%;
-			color: $color_2;
-      z-index: 1;
+	.richtext {
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		bottom: 10%;
+		color: $color_2;
+		z-index: 1;
+
+		h1 {
+			font-size: var(--heading-font-size-3xl);
+			line-height: 4.25rem;
+		}
+
+		p {
+			font-size: var(--body-font-size-xl);
+		}
 	}
 
 	.hero-bg-overlay {
@@ -52,15 +61,16 @@ $appear_animation_duration: 5s;
 		height: 100%;
 		transform-origin: bottom;
 		animation: appear ease-out forwards;
-    	animation-duration: $appear_animation_duration;
+		animation-duration: $appear_animation_duration;
 		background: linear-gradient(to bottom, transparent, black);
 	}
 }
 
 .has-appr-ani {
-	video, picture {
+	video,
+	picture {
 		animation: appear ease-out forwards;
-    	animation-duration: $appear_animation_duration;
+		animation-duration: $appear_animation_duration;
 		transform-origin: bottom;
 		object-fit: cover;
 	}
@@ -74,6 +84,16 @@ $appear_animation_duration: 5s;
 @media (width >=900px) {
 	.hero {}
 }
+
+/* layout hero-text-left */
+.text-left {
+	.richtext {
+		top: 2%;
+		text-align: left;
+	}
+}
+
+/* layout hero-text-left end */
 
 /* layout half-image and text description */
 .hero-layout-half {
@@ -92,12 +112,12 @@ $appear_animation_duration: 5s;
 			padding: 1rem;
 			text-align: left;
 
-			h1{
+			h1 {
 				flex: 1;
 				color: black;
 			}
 
-			p{ 
+			p {
 				flex: 1;
 			}
 		}
@@ -122,7 +142,7 @@ $appear_animation_duration: 5s;
 
 			&>div {
 				padding-bottom: 4rem;
-        		padding-top: 4rem;
+				padding-top: 4rem;
 			}
 		}
 	}
@@ -142,7 +162,7 @@ $appear_animation_duration: 5s;
 
 /* universal editro styles */
 .hero[data-aue-resource] {
-  height: unset !important;
+	height: unset !important;
 }
 
 /* universal editro styles end */

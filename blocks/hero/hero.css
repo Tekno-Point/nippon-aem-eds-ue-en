@@ -1,1 +1,131 @@
-.hero-container .hero-wrapper{max-width:unset;padding:0}.hero{position:relative;min-height:300px;height:calc(100vh - var(--nav-height))}.hero h1{max-width:1200px;margin-left:auto;margin-right:auto;color:var(--background-color)}.hero picture{position:absolute;z-index:-1;inset:0;-o-object-fit:cover;object-fit:cover;box-sizing:border-box}.hero img{-o-object-fit:cover;object-fit:cover;width:100%;height:100%}.hero .richtext{position:absolute;width:100%;text-align:center;bottom:10%;color:#fff;z-index:1}.hero .hero-bg-overlay{position:absolute;top:0;left:0;width:100%;height:100%;transform-origin:bottom;animation:appear ease-out forwards;animation-duration:5s;background:linear-gradient(to bottom, transparent, black)}.has-appr-ani video,.has-appr-ani picture{animation:appear ease-out forwards;animation-duration:5s;transform-origin:bottom;-o-object-fit:cover;object-fit:cover}.size-full{width:100%;height:100%}.hero-layout-half picture{height:50vh;display:block;position:unset}.hero-layout-half .richtext{color:#000;top:0}.hero-layout-half .richtext>div{margin-inline:auto;padding:1rem;text-align:left}.hero-layout-half .richtext>div h1{flex:1;color:#000}.hero-layout-half .richtext>div p{flex:1}@media(width >= 900px){.hero-layout-half picture{height:60vh;display:block}.hero-layout-half .richtext{display:flex;justify-content:center;align-items:flex-start;max-width:80%;flex:1;position:unset}.hero-layout-half .richtext>div{padding-bottom:4rem;padding-top:4rem}}@keyframes appear{0%{transform:scale(0)}100%{transform:scale(1)}}.hero[data-aue-resource]{height:unset !important}
+.hero-container .hero-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero {
+  position: relative;
+  min-height: 300px;
+  height: calc(100vh - var(--nav-height));
+}
+.hero h1 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--background-color);
+}
+.hero picture {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+.hero img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.hero .richtext {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 10%;
+  color: white;
+  z-index: 1;
+}
+.hero .richtext h1 {
+  font-size: var(--heading-font-size-3xl);
+  line-height: 4.25rem;
+}
+.hero .richtext p {
+  font-size: var(--body-font-size-xl);
+}
+.hero .hero-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: bottom;
+  animation: appear ease-out forwards;
+  animation-duration: 5s;
+  background: linear-gradient(to bottom, transparent, black);
+}
+
+.has-appr-ani video,
+.has-appr-ani picture {
+  animation: appear ease-out forwards;
+  animation-duration: 5s;
+  transform-origin: bottom;
+  object-fit: cover;
+}
+
+.size-full {
+  width: 100%;
+  height: 100%;
+}
+
+/* layout hero-text-left */
+.text-left .richtext {
+  top: 2%;
+  text-align: left;
+}
+
+/* layout hero-text-left end */
+/* layout half-image and text description */
+.hero-layout-half picture {
+  height: 50vh;
+  display: block;
+  position: unset;
+}
+.hero-layout-half .richtext {
+  color: black;
+  top: 0;
+}
+.hero-layout-half .richtext > div {
+  margin-inline: auto;
+  padding: 1rem;
+  text-align: left;
+}
+.hero-layout-half .richtext > div h1 {
+  flex: 1;
+  color: black;
+}
+.hero-layout-half .richtext > div p {
+  flex: 1;
+}
+
+@media (width >= 900px) {
+  .hero-layout-half picture {
+    height: 60vh;
+    display: block;
+  }
+  .hero-layout-half .richtext {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 80%;
+    flex: 1;
+    position: unset;
+  }
+  .hero-layout-half .richtext > div {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+  }
+}
+/* layout half-image and text description end */
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* universal editro styles */
+.hero[data-aue-resource] {
+  height: unset !important;
+}
+
+/* universal editro styles end */
