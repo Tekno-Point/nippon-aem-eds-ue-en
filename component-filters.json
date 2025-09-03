@@ -33,8 +33,7 @@
   {
     "id": "columns",
     "components": [
-      "column",
-      "carousel"
+      "column"
     ]
   },
   {
@@ -43,7 +42,8 @@
       "text",
       "image",
       "button",
-      "title"
+      "title",
+      "carousel"
     ]
   }
 ]
