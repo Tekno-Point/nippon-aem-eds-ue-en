@@ -33,7 +33,30 @@
           "name": "rows",
           "value": "",
           "label": "Rows"
-        }
+        },
+        {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Style Column 1",
+            "value": "style-column1"
+          },
+           {
+            "name": "Style Column 2",
+            "value": "style-column2"
+          },
+          {
+            "name": "Style Column 3",
+            "value": "style-column3"
+          },
+          {
+            "name": "Style Column 4",
+            "value": "style-column4"
+          }
+        ]
+      }
       ]
     }
   ],
