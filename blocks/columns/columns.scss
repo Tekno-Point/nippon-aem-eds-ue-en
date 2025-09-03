@@ -536,6 +536,15 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+  cursor: pointer;
+    transition-duration: .15s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  animation-duration: .5s;
+}
+
+.section.columns-container .style-column4 > div > div:nth-child(2) ul:hover{
+  background-color: rgb(224 48 40);
 }
 
 .section.columns-container .style-column4 > div > div:nth-child(2) ul li{
@@ -546,10 +555,19 @@
   color: rgb(224 48 40);
 }
 
+.section.columns-container .style-column4 > div > div:nth-child(2) ul:hover li{
+  color: #fff;
+}
+
 .section.columns-container .style-column4 > div > div:nth-child(2) ul li img{
   width: 20px;
   height: 16px;
   margin-top: 3px;
+}
+
+.section.columns-container .style-column4 > div > div:nth-child(2) ul:hover li img{
+  filter: brightness(0) saturate(100%) invert(100%);
+  transform: rotate(-40deg);
 }
 
 @media (width <= 768px){
