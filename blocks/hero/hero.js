@@ -3,12 +3,29 @@ import { div, video, source, fetchPlaceholders } from '../../scripts/dom-helper.
 async function getVideos(url) {
   const { publisherUrl } = await fetchPlaceholders();
 
-  return video(
+  const videoElement = video(
     {
-      class: 'size-full', autoplay: true, muted: true, playsinline: true,
+      class: 'size-full',
+      autoplay: true,      // Autoplay should work if muted
+      muted: true,         // Autoplay requires the video to be muted
+      playsinline: true    // Optional for mobile devices to play inline
     },
-    source({ src: (publisherUrl + url), type: 'video/mp4' }, 'Your browser does not support the video tag.'),
+    source(
+      {
+        src: publisherUrl + url,
+        type: 'video/mp4'
+      },
+      'Your browser does not support the video tag.'
+    )
   );
+
+  videoElement.addEventListener('canplay', () => {
+    videoElement.muted = true;
+    videoElement.play();
+  });
+
+
+  return videoElement;
 }
 
 function getImg(isDesktop, deskImg, mobImg) {
@@ -37,6 +54,9 @@ export default async function decorate(block) {
     const videoEl = await getVideos(videoUrl);
     block.textContent = '';
     block.append(videoEl, richText);
+    videoEl.addEventListener('canplay', () => {
+      block.dataset.embedLoaded = true;
+    });
   } else {
     const [deskImg, mobImg] = blockChildrens.slice(1, 3);
     const img = getImg(isDesktop, deskImg, mobImg);
