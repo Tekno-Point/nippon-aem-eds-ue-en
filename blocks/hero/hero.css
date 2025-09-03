@@ -6,6 +6,7 @@
 .hero {
   position: relative;
   min-height: 300px;
+  height: calc(100vh - var(--nav-height));
 }
 .hero h1 {
   max-width: 1200px;
@@ -57,30 +58,17 @@
   height: 100%;
 }
 
-.hero[data-aue-resource] {
-  height: unset !important;
-}
-
-@media (width >= 900px) {
-  .hero {
-    height: calc(100vh - var(--nav-height));
-  }
-}
 /* layout half-image and text description */
 .hero-layout-half picture {
-  min-height: 50vh;
+  height: 50vh;
+  display: block;
   position: unset;
 }
 .hero-layout-half .richtext {
-  position: unset;
   color: black;
+  top: 0;
 }
 .hero-layout-half .richtext > div {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 80%;
-  flex: 1;
   margin-inline: auto;
   padding: 1rem;
   text-align: left;
@@ -98,6 +86,14 @@
     height: 60vh;
     display: block;
   }
+  .hero-layout-half .richtext {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 80%;
+    flex: 1;
+    position: unset;
+  }
   .hero-layout-half .richtext > div {
     padding-bottom: 4rem;
     padding-top: 4rem;
@@ -112,3 +108,9 @@
     transform: scale(1);
   }
 }
+/* universal editro styles */
+.hero[data-aue-resource] {
+  height: unset !important;
+}
+
+/* universal editro styles end */

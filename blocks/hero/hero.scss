@@ -12,6 +12,7 @@ $appear_animation_duration: 5s;
 .hero {
 	position: relative;
 	min-height: 300px;
+	height: calc(100vh - var(--nav-height));
 
 	h1 {
 		max-width: 1200px;
@@ -51,7 +52,7 @@ $appear_animation_duration: 5s;
 		height: 100%;
 		transform-origin: bottom;
 		animation: appear ease-out forwards;
-    animation-duration: $appear_animation_duration;
+    	animation-duration: $appear_animation_duration;
 		background: linear-gradient(to bottom, transparent, black);
 	}
 }
@@ -59,7 +60,7 @@ $appear_animation_duration: 5s;
 .has-appr-ani {
 	video, picture {
 		animation: appear ease-out forwards;
-    animation-duration: $appear_animation_duration;
+    	animation-duration: $appear_animation_duration;
 		transform-origin: bottom;
 		object-fit: cover;
 	}
@@ -70,33 +71,23 @@ $appear_animation_duration: 5s;
 	height: 100%;
 }
 
-.hero[data-aue-resource] {
-  height: unset !important;
-}
-
 @media (width >=900px) {
-	.hero {
-		height: calc(100vh - var(--nav-height));
-	}
+	.hero {}
 }
 
 /* layout half-image and text description */
 .hero-layout-half {
 	picture {
-		min-height: 50vh;
+		height: 50vh;
+		display: block;
 		position: unset;
 	}
 
 	.richtext {
-		position: unset;
 		color: black;
+		top: 0;
 
 		&>div {
-			display: flex;
-			justify-content: center;
-			align-items: flex-start;
-			max-width: 80%;
-			flex: 1;
 			margin-inline: auto;
 			padding: 1rem;
 			text-align: left;
@@ -122,6 +113,13 @@ $appear_animation_duration: 5s;
 		}
 
 		.richtext {
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			max-width: 80%;
+			flex: 1;
+			position: unset;
+
 			&>div {
 				padding-bottom: 4rem;
         		padding-top: 4rem;
@@ -141,3 +139,10 @@ $appear_animation_duration: 5s;
 		transform: scale(1);
 	}
 }
+
+/* universal editro styles */
+.hero[data-aue-resource] {
+  height: unset !important;
+}
+
+/* universal editro styles end */
