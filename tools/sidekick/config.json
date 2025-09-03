@@ -1,5 +1,11 @@
 {
-  "project": "AEM XWalk Boilerplate",
-  "editUrlLabel": "AEM Editor",
-  "editUrlPattern": "{{contentSourceUrl}}{{pathname}}?cmd=open"
+  "project": "EDS Accessibility Mode Sidekick Extension",
+  "plugins": [
+    {
+      "id": "library",
+      "title": "Library",
+      "url": "https://main--nippon-aem-eds-ue-en--tekno-point.aem.live/tools/library.html"
+    }
+  ]
 }
+
