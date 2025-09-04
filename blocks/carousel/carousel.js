@@ -63,31 +63,6 @@ export default function decorate(block) {
     slidesPerView: 3,
     slidesPerGroup: 1, // 👈 scrolls by 1 card per dot
     spaceBetween: 20,
-    autoplay: true,
-    pagination: {
-      el: divPagination,
-      clickable: true,
-      type: 'bullets',
-      dynamicBullets: false, // Optional: use true if you want less dots with dynamic resizing
-    },
-    navigation: {
-      nextEl: rightArrow,
-      prevEl: leftArrow,
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-      },
-      768: {
-        slidesPerView: 2,
-        slidesPerGroup: 1,
-      },
-      1024: {
-        slidesPerView: 3,
-        slidesPerGroup: 1,
-      },
-    },
   });
 
   // Update button states

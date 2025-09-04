@@ -475,3 +475,7 @@ html, body {
     margin-left: 0;
   }
 }
+
+.section.carousel-container .swiper-wrapper{
+    display: flex;
+}
