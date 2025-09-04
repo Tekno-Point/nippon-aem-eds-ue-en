@@ -14,21 +14,23 @@
   --background-color: white;
   --light-color: #f8f8f8;
   --dark-color: #505050;
-  --text-color: #131313;
+  --text-color: #000;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
   --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
   /* body sizes */
-  --body-font-size-xl: 20px;
+  --body-font-size-xl: 16px;
+  --body-line-height-xl: 26px;
   --body-font-size-lg: 18px;
   --body-font-size-base: 16px;
   --body-font-size-sm: 14px;
   --body-font-size-xs: 12px;
   /* heading sizes */
   --heading-font-size-4xl: 60px;
-  --heading-font-size-3xl: 48px;
+  --heading-font-size-3xl: 29px;
+  --heading-line-height-3xl: 41px;
   --heading-font-size-2xl: 36px;
   --heading-font-size-xl: 30px;
   --heading-font-size-lg: 24px;
@@ -52,16 +54,21 @@
 @media (width >= 900px) {
   :root {
     /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
+    --body-font-size-xl: 20px;
+    --body-line-height-xl: 32px;
+    --body-font-size-lg: 18px;
+    --body-font-size-base: 16px;
+    --body-font-size-sm: 14px;
+    --body-font-size-xs: 12px;
     /* heading sizes */
-    --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
-    --heading-font-size-xs: 18px;
+    --heading-font-size-4xl: 60px;
+    --heading-font-size-3xl: 48px;
+    --heading-line-height-3xl: 60px;
+    --heading-font-size-2xl: 36px;
+    --heading-font-size-xl: 30px;
+    --heading-font-size-lg: 24px;
+    --heading-font-size-base: 20px;
+    --heading-font-size-sm: 18px;
   }
 }
 body {
@@ -106,27 +113,22 @@ h6 {
   scroll-margin: 40px;
 }
 
-h1 {
-  font-size: var(--heading-font-size-xxl);
+html h1 {
+  font: var(--heading-font-size-3xl)/var(--heading-line-height-3xl) var(--heading-font-family);
 }
-
-h2 {
+html h2 {
   font-size: var(--heading-font-size-xl);
 }
-
-h3 {
+html h3 {
   font-size: var(--heading-font-size-l);
 }
-
-h4 {
+html h4 {
   font-size: var(--heading-font-size-m);
 }
-
-h5 {
+html h5 {
   font-size: var(--heading-font-size-s);
 }
-
-h6 {
+html h6 {
   font-size: var(--heading-font-size-xs);
 }
 

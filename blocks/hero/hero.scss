@@ -42,13 +42,9 @@ $appear_animation_duration: 5s;
 		bottom: 10%;
 		z-index: 1;
 
-		h1 {
-			font-size: var(--heading-font-size-3xl);
-			line-height: 4.25rem;
-		}
-
 		p {
 			font-size: var(--body-font-size-xl);
+			line-height: var(--body-line-height-xl);
 		}
 
 		strong {
@@ -67,6 +63,12 @@ $appear_animation_duration: 5s;
 		animation-duration: $appear_animation_duration;
 		background: linear-gradient(to bottom, transparent, black);
 		color: $color_2;
+	}
+
+	&.text-white {
+		.richtext {
+			color: white;
+		}
 	}
 }
 
@@ -99,6 +101,14 @@ $appear_animation_duration: 5s;
 		@media (width >=900px) {
 			padding: 6.25rem 2.5rem 14.375rem 4%;
 		}
+
+		h1 {
+			margin-bottom: 20px;
+		}
+
+		p {
+			color: #4a4a4a;
+		}
 	}
 }
 
@@ -113,7 +123,7 @@ $appear_animation_duration: 5s;
 	}
 
 	.richtext {
-		color: black;
+		color: #0c0a09;
 		top: 0;
 		margin-inline: auto;
 
@@ -123,7 +133,6 @@ $appear_animation_duration: 5s;
 
 			h1 {
 				flex: 1;
-				color: black;
 			}
 
 			p {

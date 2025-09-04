@@ -247,6 +247,10 @@
           {
             "name": "Text Left",
             "value": "text-left"
+          },
+          {
+            "name": "Text White",
+            "value": "text-white"
           }
         ]
       },
