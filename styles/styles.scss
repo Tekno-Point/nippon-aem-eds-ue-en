@@ -15,7 +15,7 @@
   --background-color: white;
   --light-color: #f8f8f8;
   --dark-color: #505050;
-  --text-color: #131313;
+  --text-color: #000;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
 
@@ -25,6 +25,7 @@
 
   /* body sizes */
   --body-font-size-xl: 16px;
+  --body-line-height-xl: 26px;
   --body-font-size-lg: 18px;
   --body-font-size-base: 16px;
   --body-font-size-sm: 14px;
@@ -33,6 +34,7 @@
   /* heading sizes */
   --heading-font-size-4xl: 60px;
   --heading-font-size-3xl: 29px;
+  --heading-line-height-3xl: 41px;
   --heading-font-size-2xl: 36px;
   --heading-font-size-xl: 30px;
   --heading-font-size-lg: 24px;
@@ -60,6 +62,7 @@
   :root {
   /* body sizes */
   --body-font-size-xl: 20px;
+  --body-line-height-xl: 32px;
   --body-font-size-lg: 18px;
   --body-font-size-base: 16px;
   --body-font-size-sm: 14px;
@@ -68,6 +71,7 @@
   /* heading sizes */
   --heading-font-size-4xl: 60px;
   --heading-font-size-3xl: 48px;
+  --heading-line-height-3xl: 60px;
   --heading-font-size-2xl: 36px;
   --heading-font-size-xl: 30px;
   --heading-font-size-lg: 24px;
@@ -118,12 +122,17 @@ h6 {
   scroll-margin: 40px;
 }
 
-h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
-h4 { font-size: var(--heading-font-size-m); }
-h5 { font-size: var(--heading-font-size-s); }
-h6 { font-size: var(--heading-font-size-xs); }
+html {
+  h1 {
+    font-size: var(--heading-font-size-3xl);
+    line-height: (--heading-line-height-3xl);
+  }
+  h2 { font-size: var(--heading-font-size-xl); }
+  h3 { font-size: var(--heading-font-size-l); }
+  h4 { font-size: var(--heading-font-size-m); }
+  h5 { font-size: var(--heading-font-size-s); }
+  h6 { font-size: var(--heading-font-size-xs); }
+}
 
 p,
 dl,
