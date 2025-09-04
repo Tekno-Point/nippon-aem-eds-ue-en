@@ -70,6 +70,20 @@ $appear_animation_duration: 5s;
 			color: white;
 		}
 	}
+
+	&.width-60per{
+		.richtext {
+			width: 100%;
+			max-width: 60%;
+		}
+	}
+
+	&.width-80per {
+		.richtext {
+			width: 100%;
+			max-width: 80%;
+		}
+	}
 }
 
 .has-appr-ani {
@@ -177,6 +191,7 @@ $appear_animation_duration: 5s;
 		transform: scale(1);
 	}
 }
+
 
 /* universal editro styles */
 .hero[data-aue-resource] {

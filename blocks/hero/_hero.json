@@ -44,6 +44,14 @@
             {
               "name": "Text White",
               "value": "text-white"
+            },
+            {
+              "name": "Width 60%",
+              "value": "width-60per"
+            },
+            {
+              "name": "Width 80%",
+              "value": "width-80per"
             }
           ]
         },

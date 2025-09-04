@@ -55,6 +55,14 @@
 .hero.text-white .richtext {
   color: white;
 }
+.hero.width-60per .richtext {
+  width: 100%;
+  max-width: 60%;
+}
+.hero.width-80per .richtext {
+  width: 100%;
+  max-width: 80%;
+}
 
 .has-appr-ani video,
 .has-appr-ani picture {
