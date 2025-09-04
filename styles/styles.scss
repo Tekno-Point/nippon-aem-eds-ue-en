@@ -24,7 +24,7 @@
   --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
 
   /* body sizes */
-  --body-font-size-xl: 20px;
+  --body-font-size-xl: 16px;
   --body-font-size-lg: 18px;
   --body-font-size-base: 16px;
   --body-font-size-sm: 14px;
@@ -32,7 +32,7 @@
 
   /* heading sizes */
   --heading-font-size-4xl: 60px;
-  --heading-font-size-3xl: 48px;
+  --heading-font-size-3xl: 29px;
   --heading-font-size-2xl: 36px;
   --heading-font-size-xl: 30px;
   --heading-font-size-lg: 24px;
@@ -59,7 +59,7 @@
 @media (width >= 900px) {
   :root {
   /* body sizes */
-  --body-font-size-xl: 16px;
+  --body-font-size-xl: 20px;
   --body-font-size-lg: 18px;
   --body-font-size-base: 16px;
   --body-font-size-sm: 14px;
@@ -67,7 +67,7 @@
 
   /* heading sizes */
   --heading-font-size-4xl: 60px;
-  --heading-font-size-3xl: 29px;
+  --heading-font-size-3xl: 48px;
   --heading-font-size-2xl: 36px;
   --heading-font-size-xl: 30px;
   --heading-font-size-lg: 24px;
