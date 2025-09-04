@@ -140,6 +140,18 @@
           {
             "name": "Carousel Style",
             "value": "carousel-style"
+          },
+          {
+            "name": "Legacy Style",
+            "value": "legacy-style"
+          },
+          {
+            "name": "Invest Style",
+            "value": "invest-style"
+          },
+          {
+            "name": "Width Container",
+            "value": "width-container"
           }
         ]
       }
@@ -228,6 +240,22 @@
         "name": "classes",
         "label": "Style",
         "options": [
+          {
+            "name": "Style Column 1",
+            "value": "style-column1"
+          },
+          {
+            "name": "Style Column 2",
+            "value": "style-column2"
+          },
+          {
+            "name": "Style Column 3",
+            "value": "style-column3"
+          },
+          {
+            "name": "Style Column 4",
+            "value": "style-column4"
+          },
           {
             "name": "Style Column 5",
             "value": "style-column5"
