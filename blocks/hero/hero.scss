@@ -50,6 +50,10 @@ $appear_animation_duration: 5s;
 		p {
 			font-size: var(--body-font-size-xl);
 		}
+
+		strong {
+			color: rgb(224 48 40);
+		}
 	}
 
 	.hero-bg-overlay {
@@ -89,6 +93,12 @@ $appear_animation_duration: 5s;
 	.richtext {
 		top: 2%;
 		text-align: left;
+		max-width: 37.5rem;
+		padding: .75rem 2.5rem 9.313rem 4%;
+
+		@media (width >=900px) {
+			padding: 6.25rem 2.5rem 14.375rem 4%;
+		}
 	}
 }
 
