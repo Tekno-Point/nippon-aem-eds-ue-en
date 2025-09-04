@@ -136,6 +136,10 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "Carousel Style",
+            "value": "carousel-style"
           }
         ]
       }
@@ -218,6 +222,17 @@
         "name": "rows",
         "value": "",
         "label": "Rows"
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Style Column 5",
+            "value": "style-column5"
+          }
+        ]
       }
     ]
   },

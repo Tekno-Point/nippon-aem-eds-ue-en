@@ -479,3 +479,9 @@ html, body {
 .section.carousel-container .swiper-wrapper{
     display: flex;
 }
+
+ul li.active {
+  font-weight: bold;
+  border-bottom: 2px solid red;
+  cursor: pointer;
+}
