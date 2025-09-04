@@ -2,7 +2,11 @@
   "mappings": [
     "/content/nippon-amc/:/",
     "/content/nippon-amc/configuration:/.helix/config.json",
-    "/content/nippon-amc/metadata:/metadata.json"
+    "/content/nippon-amc/placeholders:/placeholders.json",
+    "/content/nippon-amc/redirects:/redirects.json",
+    "/content/nippon-amc/headers:/headers.json",
+    "/content/nippon-amc/metadata:/metadata.json",
+    "/content/nippon-amc/block-list/library:/block-list/library.json"
   ],
   "includes": [
     "/content/nippon-amc/"
