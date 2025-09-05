@@ -40,8 +40,18 @@ export default function decorate(block) {
   const swiperInstance = new Swiper(block, {
     loop: false,
     initialSlide: 0,
-    slidesPerView: 1, // one slide per tab
     spaceBetween: 20,
+    slideToClickedSlide: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1.3,
+        loop: false,
+        slidesOffsetAfter: 40,
+      },
+      768: {
+        slidesPerView: 1.5,
+      },
+    },
     pagination: {
       el: divPagination,
       clickable: true,
@@ -53,7 +63,8 @@ export default function decorate(block) {
   });
 
   // ✅ Find UL inside the same column block
-  const externalUl = block.closest('.columns')?.querySelector('ul');
+  const externalUl = block.closest('.columns')?.querySelector('ul')
+                 || block.parentElement?.previousElementSibling?.querySelector('ul');
 
   if (!externalUl) {
     console.warn('❌ No <ul> found for tabs near carousel.');
