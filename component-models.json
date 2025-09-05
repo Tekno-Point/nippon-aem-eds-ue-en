@@ -413,6 +413,12 @@
     "id": "tab-item-1",
     "fields": [
       {
+        "component": "text",
+        "name": "tabType",
+        "label": "Tab Type",
+        "hidden": true
+      },
+      {
         "component": "richtext",
         "name": "col1_content",
         "value": "",
