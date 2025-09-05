@@ -414,7 +414,7 @@
     "fields": [
       {
         "component": "text",
-        "name": "tabType",
+        "name": "tabtype",
         "hidden": true
       },
       {

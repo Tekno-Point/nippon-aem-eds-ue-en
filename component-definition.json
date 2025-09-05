@@ -230,7 +230,7 @@
                 "template": {
                   "name": "Tab Item 1",
                   "model": "tab-item-1",
-                  "tabType": "tab-item-1"
+                  "tabtype": "tab-item-1"
                 }
               }
             }
