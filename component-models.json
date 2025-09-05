@@ -358,5 +358,55 @@
         ]
       }
     ]
+  },
+  {
+    "id": "tabs",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Common Style",
+            "children": [
+              {
+                "name": "Left Tab",
+                "value": "left-tab"
+              },
+              {
+                "name": "Nested Accordian",
+                "value": "nested-accordian"
+              },
+              {
+                "name": "Image",
+                "value": "image"
+              }
+            ]
+          },
+          {
+            "name": "Block Style",
+            "children": [
+              {
+                "name": "Tab 1",
+                "value": "tab-1"
+              },
+              {
+                "name": "Tab 2",
+                "value": "tab-2"
+              },
+              {
+                "name": "Tab 3",
+                "value": "tab-3"
+              },
+              {
+                "name": "Tab 4",
+                "value": "tab-4"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
