@@ -42,7 +42,8 @@
             "template": {
               "name": "Tab Item 2",
               "model": "tab-item-2",
-              "col1_classes": "tab-item-2"
+              "col1_classes": "tab-item-2",
+              "jcr:title": "Tab Item 2"
             }
           }
         }
