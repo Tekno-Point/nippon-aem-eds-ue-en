@@ -186,13 +186,13 @@
             },
             {
               "component": "text",
-              "name": "tabBodyButtonText",
+              "name": "tabBodyButtonLinkText",
               "label": "Tab Body Button Text",
               "valueType": "string"
             },
             {
               "component": "text",
-              "name": "linkTitle",
+              "name": "tabBodyButtonLinkText",
               "label": "Tab Body Button Title",
               "valueType": "string"
             }
