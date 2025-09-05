@@ -7,6 +7,10 @@
   position: relative;
   min-height: 300px;
   height: calc(100vh - var(--nav-height));
+  /* layout hero-text-left */
+  /* layout hero-text-left end */
+  /* layout half-image and text description */
+  /* layout half-image and text description end */
 }
 .hero h1 {
   max-width: 1200px;
@@ -70,70 +74,58 @@
   width: 100%;
   max-width: 80%;
 }
-
-.has-appr-ani video,
-.has-appr-ani picture {
+.hero.has-appr-ani video,
+.hero.has-appr-ani picture {
   animation: appear ease-out forwards;
   animation-duration: 5s;
   transform-origin: bottom;
 }
-
-.size-full {
-  width: 100%;
-  height: 100%;
-}
-
-/* layout hero-text-left */
-.text-left .richtext {
+.hero.text-left .richtext {
   top: 2%;
   text-align: left;
   max-width: 37.5rem;
   padding: 0.75rem 2.5rem 9.313rem 4%;
 }
-@media (width >= 900px) {
-  .text-left .richtext {
-    padding: 6.25rem 2.5rem 14.375rem 4%;
-  }
-}
-.text-left .richtext p {
+.hero.text-left .richtext p {
   margin-top: 20px;
   color: #4a4a4a;
 }
-
-/* layout hero-text-left end */
-/* layout half-image and text description */
-.hero-layout-half picture {
+@media (width >= 900px) {
+  .hero.text-left .richtext {
+    padding: 6.25rem 2.5rem 14.375rem 4%;
+  }
+}
+.hero.hero-layout-half picture {
   height: 50vh;
   display: block;
   position: unset;
 }
-.hero-layout-half .richtext {
+.hero.hero-layout-half .richtext {
   color: #0c0a09;
   top: 0;
   margin-inline: auto;
 }
-.hero-layout-half .richtext > div {
+.hero.hero-layout-half .richtext > div {
   padding: 1rem;
   text-align: left;
 }
-.hero-layout-half .richtext > div h1 {
+.hero.hero-layout-half .richtext > div h1 {
   flex: 1;
 }
-.hero-layout-half .richtext > div p {
+.hero.hero-layout-half .richtext > div p {
   flex: 1;
   margin-top: 0;
 }
-
 @media (width >= 900px) {
-  .hero-layout-half picture {
+  .hero.hero-layout-half picture {
     height: 60vh;
     display: block;
   }
-  .hero-layout-half .richtext {
+  .hero.hero-layout-half .richtext {
     max-width: 80%;
     position: unset;
   }
-  .hero-layout-half .richtext > div {
+  .hero.hero-layout-half .richtext > div {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -142,7 +134,12 @@
     padding-top: 4rem;
   }
 }
-/* layout half-image and text description end */
+
+.size-full {
+  width: 100%;
+  height: 100%;
+}
+
 @keyframes appear {
   0% {
     transform: scale(0);
@@ -151,9 +148,3 @@
     transform: scale(1);
   }
 }
-/* universal editro styles */
-.hero[data-aue-resource] {
-  height: unset !important;
-}
-
-/* universal editro styles end */
