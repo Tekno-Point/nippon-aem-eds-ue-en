@@ -105,7 +105,6 @@
         {
           "component": "text",
           "name": "tabType",
-          "label": "Tab Type",
           "hidden": true
         },
         {
