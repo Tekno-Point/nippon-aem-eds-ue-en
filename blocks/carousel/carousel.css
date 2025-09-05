@@ -330,42 +330,34 @@
   margin: unset;
   background-color: rgb(245, 245, 245);
 }
-
 .section.carousel-style .swiper-wrapper > .swiper-slide {
   margin-top: 0;
 }
-
 .section.carousel-style .carousel {
   background: none;
 }
-
-.section.carousel-style .carousel .btnWrapper > .swiper-pagination {
-  display: none;
-}
-
 .section.carousel-style .carousel > .swiper-wrapper {
   margin-top: 0;
 }
-
+.section.carousel-style .carousel .btnWrapper > .swiper-pagination {
+  display: none;
+}
 .section.carousel-style .carousel-container {
   padding-left: 64px;
   margin-top: 32px;
   width: 59%;
 }
-
 .section.carousel-style .style-column-5 > div > div:nth-child(1) {
   padding: 84px 100px 84px 16px;
   width: 40%;
   border-right: 1px solid rgb(197, 197, 197);
 }
-
 .section.carousel-style .style-column-5 > div > div:nth-child(1) h2 {
   font-size: 48px;
   line-height: 68px;
   font-weight: 300;
   font-family: "poppin light";
 }
-
 .section.carousel-style .style-column-5 > div > div:nth-child(1) > p {
   margin-top: 20px;
   font-size: 20px;
@@ -374,21 +366,17 @@
   font-family: "poppin regular";
   color: rgb(74, 74, 74);
 }
-
 .section.carousel-style .style-column-5 > div > div:nth-child(1) > p:nth-child(3) {
   margin-top: 0;
   color: rgb(0, 0, 0);
 }
-
-.section.carousel-style .style-column-5 > div > div:nth-child(1) p:nth-child(4) {
+.section.carousel-style .style-column-5 > div > div:nth-child(1) > p:nth-child(4) {
   margin-top: 72px;
   color: rgb(74, 74, 74);
 }
-
 .section.carousel-style .style-column-5 > div > div:nth-child(1) ul {
   margin-top: 20px;
 }
-
 .section.carousel-style .style-column-5 > div > div:nth-child(1) ul li {
   font-size: 15px;
   line-height: 15px;
@@ -400,11 +388,40 @@
   max-width: fit-content;
   cursor: pointer;
 }
-
 .section.carousel-style .style-column-5 > div > div:nth-child(1) ul li.active {
   border-bottom: 1px solid rgb(224, 48, 40);
-  cursor: pointer;
   color: rgb(224, 48, 40);
+}
+.section.carousel-style .style-column-5 > div > div:nth-child(2) .swiper-slide {
+  opacity: 0.3;
+  background-color: #fff;
+  cursor: pointer;
+}
+.section.carousel-style .style-column-5 > div > div:nth-child(2) .swiper-slide.swiper-slide-active {
+  opacity: 1;
+}
+.section.carousel-style .style-column-5 > div > div:nth-child(2) .swiper-slide > div {
+  padding: 34px 48px;
+}
+.section.carousel-style .style-column-5 > div > div:nth-child(2) .swiper-slide > div p:nth-child(2) {
+  margin-top: 205px;
+  font-size: 28px;
+  line-height: normal;
+  font-weight: 400;
+  font-family: "poppin regular";
+  color: rgb(224, 48, 40);
+}
+.section.carousel-style .style-column-5 > div > div:nth-child(2) .swiper-slide > div p:nth-child(3) {
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 400;
+  font-family: "poppin regular";
+  color: rgb(109, 109, 109);
+  margin: 32px 0;
+}
+.section.carousel-style .style-column-5 > div > div:nth-child(2) .swiper-slide > div img {
+  width: 167px;
+  height: 160px;
 }
 
 .section.carousel-container .swiper-wrapper {
@@ -414,42 +431,6 @@
 .style-column-5 .carousel .swiper-button-prev,
 .style-column-5 .carousel .swiper-button-next {
   display: none;
-}
-
-.section.carousel-style .style-column-5 > div > div:nth-child(2) .swiper-slide {
-  opacity: 0.3;
-  background-color: #fff;
-}
-
-.section.carousel-style .style-column-5 > div > div:nth-child(2) .swiper-slide.swiper-slide-active {
-  opacity: 1;
-}
-
-.section.carousel-style .style-column-5 > div > div:nth-child(2) .swiper-slide > div {
-  padding: 34px 48px;
-}
-
-.section.carousel-style .style-column-5 > div > div:nth-child(2) .swiper-slide > div p:nth-child(2) {
-  margin-top: 205px;
-  font-size: 28px;
-  line-height: normal;
-  font-weight: 400;
-  font-family: "poppin regular";
-  color: rgb(224, 48, 40);
-}
-
-.section.carousel-style .style-column-5 > div > div:nth-child(2) .swiper-slide > div p:nth-child(3) {
-  font-size: 14px;
-  line-height: normal;
-  font-weight: 400;
-  font-family: "poppin regular";
-  color: rgb(109, 109, 109);
-  margin: 32px 0;
-}
-
-.section.carousel-style .style-column-5 > div > div:nth-child(2) .swiper-slide > div img {
-  width: 167px;
-  height: 160px;
 }
 
 @media (width < 768px) {
