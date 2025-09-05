@@ -144,7 +144,12 @@
     }
   ],
   "filters": [
-    "tab-item-1",
-    "tab-item-2"
+    {
+      "id": "tabs",
+      "components": [
+        "tab-item-1",
+        "tab-item-2"
+      ]
+    }
   ]
 }
