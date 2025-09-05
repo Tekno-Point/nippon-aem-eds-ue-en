@@ -218,6 +218,36 @@
               }
             }
           }
+        },
+        {
+          "title": "Tab Item 1",
+          "id": "tab-item-1",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Tab Item 1",
+                  "model": "tab-item-1"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Tab Item 2",
+          "id": "tab-item-2",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Tab Item 2",
+                  "model": "tab-item-2"
+                }
+              }
+            }
+          }
         }
       ]
     }

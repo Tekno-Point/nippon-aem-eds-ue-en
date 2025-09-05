@@ -408,5 +408,50 @@
         ]
       }
     ]
+  },
+  {
+    "id": "tab-item-1",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "col1_content",
+        "value": "",
+        "label": "Head",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "name": "col2_image",
+        "value": "",
+        "label": "Body Image",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "col2_imageAlt",
+        "value": "",
+        "label": "Body Image Alt Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "tab-item-2",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "col1_content",
+        "value": "",
+        "label": "Head",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "col2_content",
+        "value": "",
+        "label": "Body",
+        "valueType": "string"
+      }
+    ]
   }
 ]
