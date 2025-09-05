@@ -160,13 +160,13 @@
             },
             {
               "component": "richtext",
-              "name": "col2_tabBodyListText",
+              "name": "col3_tabBodyListText",
               "label": "Tab Body List Text",
               "valueType": "string"
             },
             {
               "component": "richtext",
-              "name": "col2_tabBodyTableText",
+              "name": "col3_tabBodyTableText",
               "label": "Tab Body Table Text",
               "valueType": "string"
             }
