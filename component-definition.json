@@ -198,7 +198,7 @@
                 "template": {
                   "name": "Advance Tab Item",
                   "model": "advance-tab-item",
-                  "col2_tabBodyListIconAlt": "list icon"
+                  "col1_tabBodyListIconAlt": "list icon"
                 }
               }
             }
