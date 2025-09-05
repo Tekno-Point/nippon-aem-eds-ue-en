@@ -53,23 +53,47 @@
       "id": "tab",
       "fields": [
         {
-          "component": "select",
-          "name": "tabType",
-          "label": "Tab Type",
-          "valueType": "string",
-          "collapsible": true,
+          "component": "multiselect",
+          "name": "classes",
+          "label": "Style",
           "options": [
             {
-              "name": "Default",
-              "value": "default"
+              "component": "multiselect",
+              "name": "classes",
+              "label": "Style",
+              "options": [
+                {
+                  "name": "Appear Animation",
+                  "value": "has-appr-ani"
+                }
+              ]
             },
             {
-              "name": "Image Tab",
-              "value": "image-tab"
+              "component": "select",
+              "name": "tabType",
+              "label": "Tab Type",
+              "valueType": "string",
+              "collapsible": true,
+              "options": [
+                {
+                  "name": "Default",
+                  "value": "default"
+                },
+                {
+                  "name": "Image Tab",
+                  "value": "image-tab"
+                },
+                {
+                  "name": "Advance Tab",
+                  "value": "advance-tab"
+                }
+              ]
             },
             {
-              "name": "Advance Tab",
-              "value": "advance-tab"
+              "component": "richtext",
+              "name": "tabHeading",
+              "label": "Tab Heading",
+              "valueType": "string"
             }
           ]
         },
@@ -135,33 +159,33 @@
           "fields": [
             {
               "component": "reference",
-              "name": "col1_tabBodyVideo",
+              "name": "tabBodyVideo",
               "label": "Tab Body Video",
               "valueType": "string",
               "multi": false
             },
             {
               "component": "richtext",
-              "name": "col2_tabBodyText",
+              "name": "tabBodyText",
               "label": "Tab Body Text",
               "valueType": "string"
             },
             {
               "component": "reference",
-              "name": "col2_tabBodyListIcon",
+              "name": "col1_tabBodyListIcon",
               "label": "Tab Body List Icon",
               "valueType": "string",
               "multi": false
             },
             {
               "component": "richtext",
-              "name": "col3_tabBodyListText",
+              "name": "col1_tabBodyListText",
               "label": "Tab Body List Text",
               "valueType": "string"
             },
             {
               "component": "richtext",
-              "name": "col3_tabBodyTableText",
+              "name": "tabBodyTableText",
               "label": "Tab Body Table Text",
               "valueType": "string"
             }
