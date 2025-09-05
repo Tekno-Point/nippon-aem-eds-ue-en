@@ -40,7 +40,8 @@
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
               "name": "Advance Tab Item",
-              "model": "advance-tab-item"
+              "model": "advance-tab-item",
+              "col2_tabBodyListIconAlt": "list icon"
             }
           }
         }
@@ -151,12 +152,6 @@
               "label": "Tab Body List Icon",
               "valueType": "string",
               "multi": false
-            },
-            {
-              "component": "text",
-              "name": "col2_tabBodyListIconAlt",
-              "label": "Tab Body List Icon Alt",
-              "valueType": "string"
             },
             {
               "component": "richtext",

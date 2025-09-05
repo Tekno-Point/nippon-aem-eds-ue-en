@@ -320,12 +320,6 @@
             "multi": false
           },
           {
-            "component": "text",
-            "name": "col2_tabBodyListIconAlt",
-            "label": "Tab Body List Icon Alt",
-            "valueType": "string"
-          },
-          {
             "component": "richtext",
             "name": "col3_tabBodyListText",
             "label": "Tab Body List Text",
