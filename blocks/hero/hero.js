@@ -1,4 +1,6 @@
-import { div, video, source, fetchPlaceholders } from '../../scripts/dom-helper.js';
+import {
+  div, video, source, fetchPlaceholders,
+} from '../../scripts/dom-helper.js';
 
 async function getVideos(url) {
   const { publisherUrl } = await fetchPlaceholders();
@@ -6,24 +8,23 @@ async function getVideos(url) {
   const videoElement = video(
     {
       class: 'size-full',
-      autoplay: true,      // Autoplay should work if muted
-      muted: true,         // Autoplay requires the video to be muted
-      playsinline: true    // Optional for mobile devices to play inline
+      autoplay: true,
+      muted: true,
+      playsinline: true,
     },
     source(
       {
         src: publisherUrl + url,
-        type: 'video/mp4'
+        type: 'video/mp4',
       },
-      'Your browser does not support the video tag.'
-    )
+      'Your browser does not support the video tag.',
+    ),
   );
 
   videoElement.addEventListener('canplay', () => {
     videoElement.muted = true;
     videoElement.play();
   });
-
 
   return videoElement;
 }
