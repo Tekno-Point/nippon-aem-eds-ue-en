@@ -185,7 +185,7 @@
             },
             {
               "component": "text",
-              "name": "tabBodyButtonLinkText",
+              "name": "tabBodyButtonLinkTitle",
               "label": "Tab Body Button Title",
               "valueType": "string"
             }
