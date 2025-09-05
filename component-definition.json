@@ -229,8 +229,7 @@
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "Tab Item 1",
-                  "model": "tab-item-1",
-                  "tabtype": "tab-item-1"
+                  "model": "tab-item-1"
                 }
               }
             }
