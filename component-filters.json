@@ -38,5 +38,12 @@
       "button",
       "title"
     ]
+  },
+  {
+    "id": "tab",
+    "components": [
+      "image-tab-item",
+      "advance-tab-item"
+    ]
   }
 ]
