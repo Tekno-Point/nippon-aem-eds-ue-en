@@ -63,19 +63,6 @@
               "label": "Style",
               "options": [
                 {
-                  "name": "Appear Animation",
-                  "value": "has-appr-ani"
-                }
-              ]
-            },
-            {
-              "component": "select",
-              "name": "tabType",
-              "label": "Tab Type",
-              "valueType": "string",
-              "collapsible": true,
-              "options": [
-                {
                   "name": "Default",
                   "value": "default"
                 },
@@ -88,12 +75,6 @@
                   "value": "advance-tab"
                 }
               ]
-            },
-            {
-              "component": "richtext",
-              "name": "tabHeading",
-              "label": "Tab Heading",
-              "valueType": "string"
             }
           ]
         },
