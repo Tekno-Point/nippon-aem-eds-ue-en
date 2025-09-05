@@ -12,6 +12,11 @@ export default async function decorate(block) {
   tabs.forEach((tab, i) => {
     const id = toClassName(tab.textContent);
 
+    if (!i) {
+      const classes = tab.firstElementChild;
+      tab.classList.add(...classes.textContent.trim().split(' '));
+      classes.remove();
+    }
     // decorate tabpanel
     const tabpanel = block.children[i];
     tabpanel.className = 'tabs-panel';

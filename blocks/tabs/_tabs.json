@@ -25,7 +25,8 @@
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
               "name": "Tab Item 1",
-              "model": "tab-item-1"
+              "model": "tab-item-1",
+              "col1_classes": "tab-item-1"
             }
           }
         }
@@ -40,7 +41,8 @@
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
               "name": "Tab Item 2",
-              "model": "tab-item-2"
+              "model": "tab-item-2",
+              "col1_classes": "tab-item-2"
             }
           }
         }
@@ -102,6 +104,30 @@
       "id": "tab-item-1",
       "fields": [
         {
+          "component": "multiselect",
+          "name": "col1_classes",
+          "label": "Style",
+          "options": [
+            {
+              "name": "Common Style",
+              "children": [
+                {
+                  "name": "Left Tab",
+                  "value": "left-tab"
+                },
+                {
+                  "name": "Nested Accordian",
+                  "value": "nested-accordian"
+                },
+                {
+                  "name": "Image",
+                  "value": "image"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "component": "richtext",
           "name": "col1_content",
           "value": "",
@@ -127,6 +153,30 @@
     {
       "id": "tab-item-2",
       "fields": [
+        {
+          "component": "multiselect",
+          "name": "col1_classes",
+          "label": "Style",
+          "options": [
+            {
+              "name": "Common Style",
+              "children": [
+                {
+                  "name": "Left Tab",
+                  "value": "left-tab"
+                },
+                {
+                  "name": "Nested Accordian",
+                  "value": "nested-accordian"
+                },
+                {
+                  "name": "Image",
+                  "value": "image"
+                }
+              ]
+            }
+          ]
+        },
         {
           "component": "richtext",
           "name": "col1_content",

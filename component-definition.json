@@ -229,7 +229,8 @@
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "Tab Item 1",
-                  "model": "tab-item-1"
+                  "model": "tab-item-1",
+                  "col1_classes": "tab-item-1"
                 }
               }
             }
@@ -244,7 +245,8 @@
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "Tab Item 2",
-                  "model": "tab-item-2"
+                  "model": "tab-item-2",
+                  "col1_classes": "tab-item-2"
                 }
               }
             }
