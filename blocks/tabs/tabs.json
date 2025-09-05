@@ -26,40 +26,32 @@
           "label": "Style",
           "options": [
             {
-              "name": "Common Style",
+              "name": "Theme",
               "children": [
                 {
-                  "name": "Left Tab",
-                  "value": "left-tab"
+                  "name": "Light",
+                  "value": "light"
                 },
                 {
-                  "name": "Nested Accordian",
-                  "value": "nested-accordian"
-                },
-                {
-                  "name": "Image",
-                  "value": "image"
+                  "name": "Dark",
+                  "value": "dark"
                 }
               ]
             },
             {
-              "name": "Block Style",
+              "name": "Type",
               "children": [
                 {
-                  "name": "Tab 1",
-                  "value": "tab-1"
+                  "name": "Alpha",
+                  "value": "alpha"
                 },
                 {
-                  "name": "Tab 2",
-                  "value": "tab-2"
+                  "name": "Beta",
+                  "value": "beta"
                 },
                 {
-                  "name": "Tab 3",
-                  "value": "tab-3"
-                },
-                {
-                  "name": "Tab 4",
-                  "value": "tab-4"
+                  "name": "Gamma",
+                  "value": "gamma"
                 }
               ]
             }
