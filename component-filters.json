@@ -50,7 +50,7 @@
   {
     "id": "tabs",
     "components": [
-      "tab-item-1",
+      "image-tab-item",
       "tab-item-2"
     ]
   }

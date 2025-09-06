@@ -221,16 +221,16 @@
           }
         },
         {
-          "title": "Tab Item 1",
-          "id": "tab-item-1",
+          "title": "Image Tab Item",
+          "id": "image-tab-item",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
-                  "name": "Tab Item 1",
-                  "model": "tab-item-1",
-                  "col1_classes": "tab-item-1"
+                  "name": "Image Tab Item",
+                  "model": "image-tab-item",
+                  "col1_classes": "image-tab-item"
                 }
               }
             }

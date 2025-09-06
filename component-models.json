@@ -373,14 +373,6 @@
               {
                 "name": "Left Tab",
                 "value": "left-tab"
-              },
-              {
-                "name": "Nested Accordian",
-                "value": "nested-accordian"
-              },
-              {
-                "name": "Image",
-                "value": "image"
               }
             ]
           },
@@ -394,14 +386,6 @@
               {
                 "name": "Tab 2",
                 "value": "tab-2"
-              },
-              {
-                "name": "Tab 3",
-                "value": "tab-3"
-              },
-              {
-                "name": "Tab 4",
-                "value": "tab-4"
               }
             ]
           }
@@ -410,7 +394,7 @@
     ]
   },
   {
-    "id": "tab-item-1",
+    "id": "image-tab-item",
     "fields": [
       {
         "component": "multiselect",
@@ -418,44 +402,27 @@
         "label": "Style",
         "options": [
           {
-            "name": "Common Style",
-            "children": [
-              {
-                "name": "Left Tab",
-                "value": "left-tab"
-              },
-              {
-                "name": "Nested Accordian",
-                "value": "nested-accordian"
-              },
-              {
-                "name": "Image",
-                "value": "image"
-              }
-            ]
+            "name": "Image Tab Item",
+            "value": "image-tab-item"
           }
         ]
       },
       {
         "component": "richtext",
-        "name": "col1_content",
-        "value": "",
-        "label": "Head",
-        "valueType": "string"
+        "name": "col1_tabButton",
+        "label": "Tab Heading"
       },
       {
         "component": "reference",
         "name": "col2_image",
-        "value": "",
-        "label": "Body Image",
-        "valueType": "string"
+        "label": "Image",
+        "valueType": "string",
+        "multi": false
       },
       {
         "component": "text",
         "name": "col2_imageAlt",
-        "value": "",
-        "label": "Body Image Alt Text",
-        "valueType": "string"
+        "label": "Image Alt Text"
       }
     ]
   },
