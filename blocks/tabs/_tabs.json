@@ -164,7 +164,8 @@
         {
           "component": "text",
           "name": "col1_tabButton",
-          "label": "Tab Heading"
+          "label": "Tab Heading",
+          "valueType": "string"
         },
         {
           "component": "container",
