@@ -33,6 +33,23 @@
       }
     },
     {
+      "title": "Overview Tab Item",
+      "id": "overview-tab-item",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Overview Tab Item",
+              "model": "overview-tab-item",
+              "col1_classes": "investment-overview",
+              "col3_tabBodyListIconAlt": "list icon"
+            }
+          }
+        }
+      }
+    },
+    {
       "title": "Tab Item 2",
       "id": "tab-item-2",
       "plugins": {
@@ -94,8 +111,12 @@
           "label": "Style",
           "options": [
             {
-              "name": "Image Tab Item",
-              "value": "image-tab-item"
+              "name": "Global Network",
+              "value": "global-network"
+            },
+            {
+              "name": "Investment Overview",
+              "value": "investment-overview"
             }
           ]
         },
@@ -115,6 +136,88 @@
           "component": "text",
           "name": "col2_imageAlt",
           "label": "Image Alt Text"
+        }
+      ]
+    },
+    {
+      "id": "overview-tab-item",
+      "fields": [
+        {
+          "component": "multiselect",
+          "name": "col1_classes",
+          "label": "Style",
+          "options": [
+            {
+              "name": "Global Network",
+              "value": "global-network"
+            },
+            {
+              "name": "Investment Overview",
+              "value": "investment-overview"
+            }
+          ]
+        },
+        {
+          "component": "text",
+          "name": "col1_classes",
+          "label": "Tab Heading"
+        },
+        {
+          "component": "container",
+          "name": "tabBody",
+          "label": "Tab Body",
+          "collapsible": true,
+          "fields": [
+            {
+              "component": "aem-content",
+              "name": "col2_tabBodyVideo",
+              "label": "Tab Body Video"
+            },
+            {
+              "component": "richtext",
+              "name": "col3_tabBodyText",
+              "label": "Tab Body Text"
+            },
+            {
+              "component": "reference",
+              "name": "col3_tabBodyListIcon",
+              "label": "Tab Body List Icon",
+              "multi": false
+            },
+            {
+              "component": "richtext",
+              "name": "col3_tabBodyListText",
+              "label": "Tab Body List Text"
+            },
+            {
+              "component": "richtext",
+              "name": "col3_tabBodyTableText",
+              "label": "Tab Body Table Text"
+            }
+          ]
+        },
+        {
+          "component": "container",
+          "name": "tabBodyButton",
+          "label": "Tab Body Button",
+          "collapsible": true,
+          "fields": [
+            {
+              "component": "aem-content",
+              "name": "col3_tabBodyButtonLink",
+              "label": "Tab Body Button Link"
+            },
+            {
+              "component": "text",
+              "name": "col3_tabBodyButtonLinkText",
+              "label": "Tab Body Button Text"
+            },
+            {
+              "component": "text",
+              "name": "col3_tabBodyButtonLinkTitle",
+              "label": "Tab Body Button Title"
+            }
+          ]
         }
       ]
     },
@@ -167,7 +270,7 @@
       "id": "tabs",
       "components": [
         "image-tab-item",
-        "tab-item-2"
+        "overview-tab-item"
       ]
     }
   ]
