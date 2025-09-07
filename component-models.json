@@ -424,7 +424,7 @@
       },
       {
         "component": "text",
-        "name": "col1_classes",
+        "name": "col1_tabButton",
         "label": "Tab Heading"
       },
       {
