@@ -1,0 +1,72 @@
+/* stylelint-disable-next-line at-rule-no-unknown */
+@use 'left-tabs' as *;
+
+$border-color: #dadada;
+$padding-base: 24px;
+$transition-speed: 0.2s;
+
+.tabs {
+  .tabs-list {
+    display: flex;
+    gap: 0.5ch;
+    max-width: 100%;
+    font-size: var(--body-font-size-xs);
+    overflow-x: auto;
+
+    button {
+      flex: 0 0 max-content;
+      margin: 0;
+      border: 1px solid $border-color;
+      border-radius: 0;
+      padding: 0.5em;
+      background-color: var(--light-color);
+      color: initial;
+      font-weight: bold;
+      line-height: unset;
+      text-align: initial;
+      text-overflow: unset;
+      overflow: unset;
+      white-space: unset;
+      transition: background-color $transition-speed;
+
+      p {
+        margin: 0;
+      }
+
+      &[aria-selected='true'] {
+        border-bottom: 1px solid var(--background-color);
+        background-color: var(--background-color);
+        cursor: initial;
+      }
+    }
+  }
+
+  .tabs-panel {
+    margin-top: -1px;
+    padding: $padding-base;
+    border: 1px solid $border-color;
+    overflow: auto;
+
+    &[aria-hidden='true'] {
+      display: none;
+    }
+  }
+
+}
+
+@media (width >=600px) {
+  .tabs {
+    .tabs-list {
+      font-size: var(--body-font-size-s);
+      padding: 1.5rem;
+    }
+  }
+}
+
+@media (width >=900px) {
+  .tabs {
+    .tabs-list {
+      font-size: var(--body-font-size-m);
+    }
+  }
+}

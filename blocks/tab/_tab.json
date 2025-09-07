@@ -17,21 +17,6 @@
       }
     },
     {
-      "title": "Image Tab Item",
-      "id": "image-tab-item",
-      "plugins": {
-        "xwalk": {
-          "page": {
-            "resourceType": "core/franklin/components/block/v1/block/item",
-            "template": {
-              "name": "Image Tab Item",
-              "model": "image-tab item"
-            }
-          }
-        }
-      }
-    },
-    {
       "title": "Advance Tab Item",
       "id": "advance-tab-item",
       "plugins": {
@@ -76,42 +61,6 @@
           "name": "tabHeading",
           "label": "Tab Heading",
           "valueType": "string"
-        }
-      ]
-    },
-    {
-      "id": "image-tab-item",
-      "fields": [
-        {
-          "component": "richtext",
-          "name": "tabButtonText",
-          "label": "Tab Button Text",
-          "valueType": "string"
-        },
-        {
-          "component": "container",
-          "name": "tabBody",
-          "fields": [
-            {
-              "component": "reference",
-              "name": "tabBodyImage",
-              "label": "Tab Body Image",
-              "valueType": "string",
-              "multi": false
-            },
-            {
-              "component": "text",
-              "name": "tabBodyImageAlt",
-              "label": "Tab Body Image Alt",
-              "valueType": "string"
-            },
-            {
-              "component": "richtext",
-              "name": "tabBodyText",
-              "label": "Tab Body Text",
-              "valueType": "string"
-            }
-          ]
         }
       ]
     },

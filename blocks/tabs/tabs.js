@@ -1,5 +1,5 @@
-// eslint-disable-next-line import/no-unresolved
 import { toClassName } from '../../scripts/aem.js';
+import tabsOrchestrator from './tabsOrchestrator.js';
 
 export default async function decorate(block) {
   // build tablist
@@ -7,21 +7,25 @@ export default async function decorate(block) {
   tablist.className = 'tabs-list';
   tablist.setAttribute('role', 'tablist');
 
+  const panelContainer = document.createElement('div');
+  panelContainer.className = 'tabs-panel-container';
+  panelContainer.append(...block.children);
+
   // decorate tabs and tabpanels
-  const tabs = [...block.children].map((child) => child.firstElementChild);
+  const tabs = [...panelContainer.children].map((child) => child.firstElementChild);
   tabs.forEach((tab, i) => {
     const id = toClassName(tab.textContent);
 
     // decorate tabpanel
-    const tabpanel = block.children[i];
+    const tabpanel = panelContainer.children[i];
     tabpanel.className = 'tabs-panel';
     tabpanel.id = `tabpanel-${id}`;
     tabpanel.setAttribute('aria-hidden', !!i);
     tabpanel.setAttribute('aria-labelledby', `tab-${id}`);
     tabpanel.setAttribute('role', 'tabpanel');
-    if (!i) {
+    if (tab.children.length > 1) {
       const classes = tab.firstElementChild;
-      tabpanel.classList.add(...classes.textContent.trim().split(',');
+      tabpanel.classList.add(...classes.textContent.trim().split(','));
       classes.remove();
     }
 
@@ -48,5 +52,7 @@ export default async function decorate(block) {
     tab.remove();
   });
 
-  block.prepend(tablist);
+  tabsOrchestrator([tablist, panelContainer], 'global-network');
+
+  block.append(tablist, panelContainer);
 }

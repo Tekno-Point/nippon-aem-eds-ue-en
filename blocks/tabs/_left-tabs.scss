@@ -1,0 +1,122 @@
+.tabs.left-tab {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .tabs-list {
+        display: flex;
+        max-height: 60vh;
+        flex-direction: column;
+        gap: 0.5rem;
+        overflow-y: scroll;
+        padding-left: 0.75rem;
+        direction: rtl;
+
+        &>* {
+            direction: ltr;
+        }
+
+        .tabs-tab {
+            display: flex;
+            width: 100%;
+            color: #4a4a4a;
+            flex-direction: column;
+            align-items: flex-start;
+            flex: none;
+            gap: 0.5rem;
+            border-width: 1px;
+            border-style: solid;
+            background-color: #fff;
+            border-color: #e5e7eb;
+            padding: 0.75rem;
+
+            &[aria-selected='true'] {
+                color: #e03028;
+                border: 1px solid transparent;
+                border-image-slice: 1;
+                border-image-source: linear-gradient(180deg, #e03028, hsl(0deg 0% 97% / 10%) 121.39%);
+            }
+
+            p {
+                font-size: 14.84px;
+                font-weight: 500;
+            }
+
+            ul {
+                margin: 0;
+                list-style-type: disc;
+                padding-left: 1rem;
+                font-size: 14px;
+                color: #696969;
+            }
+        }
+
+        &::-webkit-scrollbar {
+            margin-right: 20px;
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #e03028;
+            border-radius: 13px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #c5c5c5;
+            border: 2px solid #fff;
+            border-radius: 13px;
+        }
+    }
+
+    .tabs-panel-container {
+        position: relative;
+
+        .tabs-panel {
+            padding: 0;
+            border: none;
+
+        }
+
+        .gn-btns {
+            position: absolute;
+            width: 1rem;
+            height: 1rem;
+            cursor: pointer;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+}
+
+@media (width >=600px) {
+    .tabs.left-tab {
+        .tabs-list {
+            padding: 0 0 0 0.75rem;
+
+            .tabs-tab {
+                padding: 1.5rem;
+
+                p {
+                    font-size: 20px;
+                }
+
+                ul {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (width >=900px) {
+    .tabs.left-tab {
+        width: 100%;
+        flex-direction: row;
+
+        .tabs-list {
+            width: 100%;
+
+            .tabs-tab {}
+
+        }
+    }
+}

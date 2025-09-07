@@ -246,42 +246,6 @@
     ]
   },
   {
-    "id": "image-tab-item",
-    "fields": [
-      {
-        "component": "richtext",
-        "name": "tabButtonText",
-        "label": "Tab Button Text",
-        "valueType": "string"
-      },
-      {
-        "component": "container",
-        "name": "tabBody",
-        "fields": [
-          {
-            "component": "reference",
-            "name": "tabBodyImage",
-            "label": "Tab Body Image",
-            "valueType": "string",
-            "multi": false
-          },
-          {
-            "component": "text",
-            "name": "tabBodyImageAlt",
-            "label": "Tab Body Image Alt",
-            "valueType": "string"
-          },
-          {
-            "component": "richtext",
-            "name": "tabBodyText",
-            "label": "Tab Body Text",
-            "valueType": "string"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "advance-tab-item",
     "fields": [
       {
