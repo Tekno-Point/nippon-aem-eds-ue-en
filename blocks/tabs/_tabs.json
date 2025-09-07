@@ -74,7 +74,7 @@
         {
           "component": "multiselect",
           "name": "classes",
-          "label": "Style",
+          "label": "Styles",
           "options": [
             {
               "name": "Common Style",
@@ -169,7 +169,7 @@
           "collapsible": true,
           "fields": [
             {
-              "component": "aem-content",
+              "component": "reference",
               "name": "col2_tabBodyVideo",
               "label": "Tab Body Video"
             },
