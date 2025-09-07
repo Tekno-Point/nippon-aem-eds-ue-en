@@ -74,7 +74,7 @@
         {
           "component": "multiselect",
           "name": "classes",
-          "label": "Styles",
+          "label": "Style",
           "options": [
             {
               "name": "Common Style",
@@ -82,6 +82,10 @@
                 {
                   "name": "Left Tab",
                   "value": "left-tab"
+                },
+                {
+                  "name": "Overview Tab",
+                  "value": "overview-tab"
                 }
               ]
             },
