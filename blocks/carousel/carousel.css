@@ -118,7 +118,7 @@
   padding-left: 64px;
   margin-top: 32px;
   width: 59%;
-  min-height: 450px;
+  min-height: 900px;
 }
 .section.carousel-style .style-column-5 > div > div:nth-child(1) {
   padding: 84px 100px 84px 16px;
@@ -224,6 +224,7 @@
     margin-top: 0;
     width: 100%;
     background-color: rgb(245, 245, 245);
+    min-height: 390px;
   }
   .section.carousel-style .style-column-5 > div > div:nth-child(1) {
     padding: 0;
