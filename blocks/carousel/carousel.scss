@@ -109,10 +109,6 @@
     margin-top: 64px;
 }
 
-.section.carousel-style{
-    display: none;
-}
-
 .section {
   &.carousel-style {
     .columns-wrapper {
@@ -145,6 +141,7 @@
       padding-left: 64px;
       margin-top: 32px;
       width: 59%;
+      min-height: 450px;
     }
 
     .style-column-5 {
