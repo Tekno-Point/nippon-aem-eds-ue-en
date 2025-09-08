@@ -102,9 +102,6 @@
   padding: 12px 17px 12px 191px;
   margin: unset;
 }
-.section.carousel-style .swiper-wrapper {
-  min-height: 605px;
-}
 .section.carousel-style .swiper-wrapper > .swiper-slide {
   margin-top: 0;
 }
@@ -121,6 +118,7 @@
   padding-left: 64px;
   margin-top: 32px;
   width: 59%;
+  min-height: 900px;
 }
 .section.carousel-style .style-column-5 > div > div:nth-child(1) {
   padding: 84px 100px 84px 16px;
@@ -214,9 +212,6 @@
     padding: 16px;
     background-color: #fff;
   }
-  .section.carousel-style .swiper-wrapper {
-    min-height: 392px;
-  }
   .section.carousel-style .swiper-wrapper > .swiper-slide {
     margin-top: 0;
   }
@@ -229,6 +224,7 @@
     margin-top: 0;
     width: 100%;
     background-color: rgb(245, 245, 245);
+    min-height: 390px;
   }
   .section.carousel-style .style-column-5 > div > div:nth-child(1) {
     padding: 0;
