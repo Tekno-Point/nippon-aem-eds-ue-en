@@ -36,22 +36,26 @@
   src: url("/fonts/poppins-latin-300-normal.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "poppin regular";
   src: url("/fonts/poppins-latin-400-normal.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "poppin medium";
   src: url("/fonts/poppins-latin-500-normal.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "poppin semi-bold";
   src: url("/fonts/poppins-latin-600-normal.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
