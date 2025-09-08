@@ -1,5 +1,7 @@
 import { div } from '../../scripts/dom-helper.js';
 
+export const tabTypes = ['global-network', 'investment-overview'];
+
 function globalNetworkTabs(tabs, panelContainer) {
   const positions = [
     { top: '54%', left: '66.2%' },

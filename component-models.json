@@ -358,12 +358,12 @@
             "name": "Block Style",
             "children": [
               {
-                "name": "Tab 1",
-                "value": "tab-1"
+                "name": "Global Network",
+                "value": "global-network"
               },
               {
-                "name": "Tab 2",
-                "value": "tab-2"
+                "name": "Investment Overview",
+                "value": "investment-overview"
               }
             ]
           }
@@ -380,12 +380,8 @@
         "label": "Style",
         "options": [
           {
-            "name": "Global Network",
-            "value": "global-network"
-          },
-          {
-            "name": "Investment Overview",
-            "value": "investment-overview"
+            "name": "Tabs Item",
+            "value": "tabs-item"
           }
         ]
       },
@@ -417,12 +413,8 @@
         "label": "Style",
         "options": [
           {
-            "name": "Global Network",
-            "value": "global-network"
-          },
-          {
-            "name": "Investment Overview",
-            "value": "investment-overview"
+            "name": "Tabs Item",
+            "value": "tabs-item"
           }
         ]
       },

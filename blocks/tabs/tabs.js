@@ -1,5 +1,9 @@
 import { toClassName } from '../../scripts/aem.js';
-import tabsOrchestrator from './tabsOrchestrator.js';
+import tabsOrchestrator, { tabTypes } from './tabsOrchestrator.js';
+
+function getTabsType(block) {
+  return Array.from(block.classList).filter((c) => tabTypes.includes(c)).at(0);
+}
 
 export default async function decorate(block) {
   // build tablist
@@ -52,7 +56,7 @@ export default async function decorate(block) {
     tab.remove();
   });
 
-  tabsOrchestrator([tablist, panelContainer], 'global-network');
+  tabsOrchestrator([tablist, panelContainer], getTabsType(block));
 
   block.append(tablist, panelContainer);
 }
