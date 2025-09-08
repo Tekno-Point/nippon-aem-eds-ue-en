@@ -118,6 +118,8 @@
     }
 
     .swiper-wrapper {
+        min-height: 605px;
+
       > .swiper-slide {
         margin-top: 0;
       }
@@ -141,7 +143,6 @@
       padding-left: 64px;
       margin-top: 32px;
       width: 59%;
-      min-height: 980px;
     }
 
     .style-column-5 {
@@ -269,6 +270,8 @@
     }
 
     .swiper-wrapper {
+        min-height: 392px;
+
       > .swiper-slide {
         margin-top: 0;
       }
@@ -286,7 +289,6 @@
       margin-top: 0;
       width: 100%;
       background-color: rgb(245 245 245);
-      min-height: 390px;
     }
 
     .style-column-5 {
