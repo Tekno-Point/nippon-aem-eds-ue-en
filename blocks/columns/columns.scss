@@ -32,6 +32,10 @@
 
   // Column Component 1
   .section {
+  &.background-grey{
+    background-color: rgb(245 245 245 / 100%);
+  }
+
   &.columns-container {
     .columns-wrapper {
       max-width: 100%;
@@ -367,7 +371,6 @@
   }
 
   &.invest-style {
-    background-color: rgb(245 245 245 / 100%);
     padding: 100px 0;
 
     .default-content-wrapper {
