@@ -1,5 +1,5 @@
 import { toCamelCase } from './aem.js';
-/********************** DOM Helper START **********************/
+/** ******************** DOM Helper START ********************* */
 
 /*
  * Copyright 2023 Adobe. All rights reserved.
@@ -43,34 +43,34 @@ import { toCamelCase } from './aem.js';
  * @returns {Element} The constructred DOM Element
  */
 export function domEl(tag, ...items) {
-    const element = document.createElement(tag);
+  const element = document.createElement(tag);
 
-    if (!items || items.length === 0) return element;
+  if (!items || items.length === 0) return element;
 
-    if (!(items[0] instanceof Element || items[0] instanceof HTMLElement) && typeof items[0] === 'object') {
-        const [attributes, ...rest] = items;
-        items = rest;
+  if (!(items[0] instanceof Element || items[0] instanceof HTMLElement) && typeof items[0] === 'object') {
+    const [attributes, ...rest] = items;
+    items = rest;
 
-        Object.entries(attributes).forEach(([key, value]) => {
-            if (typeof value === 'boolean') {
-                if (value) element.setAttribute(key, '');
-                else element.removeAttribute(key);
-            } else if (!key.toLowerCase().startsWith('on')) {
-                element.setAttribute(key, Array.isArray(value) ? value.join(' ') : value);
-            } else {
-                element.addEventListener(key.substring(2).toLowerCase(), value);
-            }
-        });
-    }
-
-    items.forEach((item) => {
-        item = item instanceof Element || item instanceof HTMLElement
-            ? item
-            : document.createTextNode(item);
-        element.appendChild(item);
+    Object.entries(attributes).forEach(([key, value]) => {
+      if (typeof value === 'boolean') {
+        if (value) element.setAttribute(key, '');
+        else element.removeAttribute(key);
+      } else if (!key.toLowerCase().startsWith('on')) {
+        element.setAttribute(key, Array.isArray(value) ? value.join(' ') : value);
+      } else {
+        element.addEventListener(key.substring(2).toLowerCase(), value);
+      }
     });
+  }
 
-    return element;
+  items.forEach((item) => {
+    item = item instanceof Element || item instanceof HTMLElement
+      ? item
+      : document.createTextNode(item);
+    element.appendChild(item);
+  });
+
+  return element;
 }
 
 /*
@@ -104,8 +104,8 @@ export function strong(...items) { return domEl('strong', ...items); }
 export function select(...items) { return domEl('select', ...items); }
 export function option(...items) { return domEl('option', ...items); }
 
-/********************** DOM Helper END **********************/
-/********************** Placeholders START **********************/
+/** ******************** DOM Helper END ********************* */
+/** ******************** Placeholders START ********************* */
 
 /*
  * Copyright 2025 Adobe. All rights reserved.
@@ -118,7 +118,6 @@ export function option(...items) { return domEl('option', ...items); }
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-
 
 /**
  * Gets placeholders object.
@@ -154,10 +153,10 @@ export async function fetchPlaceholders(prefix = 'default') {
   }
   return window.placeholders[`${prefix}`];
 }
-/* 
+/*
 // Exmaple usage:
 export const { publisherUrl } = await fetchPlaceholders();
 console.log('Publisher URL:', publisherUrl);
 
 */
-/********************** Placeholders END **********************/
+/** ******************** Placeholders END ********************* */
