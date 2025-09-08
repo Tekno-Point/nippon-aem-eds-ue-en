@@ -154,7 +154,7 @@
             font-size: 48px;
             line-height: 68px;
             font-weight: 300;
-            font-family: 'poppin light';
+            font-family: 'poppin light',sans-serif;
           }
 
           > p {
@@ -162,7 +162,7 @@
             font-size: 20px;
             line-height: 32px;
             font-weight: 400;
-            font-family: 'poppin regular';
+            font-family: 'poppin regular',sans-serif;
             color: rgb(74 74 74);
 
             &:nth-child(3) {
@@ -183,7 +183,7 @@
               font-size: 15px;
               line-height: 15px;
               font-weight: 400;
-              font-family: 'poppin regular';
+              font-family: 'poppin regular',sans-serif;
               color: rgb(74 74 74);
               padding-bottom: 12px;
               margin-bottom: 16px;
@@ -217,7 +217,7 @@
                   font-size: 28px;
                   line-height: normal;
                   font-weight: 400;
-                  font-family: 'poppin regular';
+                  font-family: 'poppin regular',sans-serif;
                   color: rgb(224 48 40);
                 }
 
@@ -225,7 +225,7 @@
                   font-size: 14px;
                   line-height: normal;
                   font-weight: 400;
-                  font-family: 'poppin regular';
+                  font-family: 'poppin regular',sans-serif;
                   color: rgb(109 109 109);
                   margin: 32px 0;
                 }
