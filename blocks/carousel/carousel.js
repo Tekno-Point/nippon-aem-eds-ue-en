@@ -20,7 +20,7 @@ export default function decorate(block) {
 
   // Navigation UI
   const btnWrapper = document.createElement('div');
-  btnWrapper.classList.add('btnWrapper');
+  btnWrapper.classList.add('btn-wrapper');
 
   const divPagination = document.createElement('div');
   divPagination.classList.add('swiper-pagination');
@@ -67,7 +67,7 @@ export default function decorate(block) {
                  || block.parentElement?.previousElementSibling?.querySelector('ul');
 
   if (!externalUl) {
-    console.warn('❌ No <ul> found for tabs near carousel.');
+    console.warn('Carousel Not Found');
     return;
   }
 
