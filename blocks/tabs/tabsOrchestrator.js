@@ -1,6 +1,8 @@
-import { div } from '../../scripts/dom-helper.js';
+import {
+  div, input, span, label,
+} from '../../scripts/dom-helper.js';
 
-export const tabTypes = ['global-network', 'investment-overview'];
+export const tabTypes = ['global-network', 'overview-tab'];
 
 function globalNetworkTabs(tabs, panelContainer) {
   const positions = [
@@ -26,6 +28,18 @@ function globalNetworkTabs(tabs, panelContainer) {
   });
 }
 
+function overviewTabs(tabs, panelContainer) {
+  [...tabs.children].forEach((tab) => {
+    const isSelected = tab.getAttribute('aria-selected') === 'true';
+    const inpt = input({ type: 'radio', name: 'tab-radio', checked: isSelected });
+    tab.addEventListener('click', () => { inpt.checked = true; });
+    const radioIcon = span({ class: 'radio-icon' }, span({ class: 'radio-icon-dot' }));
+    const labelEle = label({}, inpt, radioIcon);
+    labelEle.append(tab.firstElementChild);
+    tab.prepend(labelEle);
+  });
+}
+
 /**
  *
  * @param {HTMLCollection} eleArr
@@ -34,6 +48,7 @@ function globalNetworkTabs(tabs, panelContainer) {
 function tabsOrchestrator(eleArr, tabType = 'default') {
   const orchObj = {
     'global-network': globalNetworkTabs,
+    'overview-tab': overviewTabs,
   };
 
   const orchestrator = orchObj[tabType];

@@ -1,5 +1,6 @@
 /* stylelint-disable-next-line at-rule-no-unknown */
 @use 'left-tabs' as *;
+@use 'overview-tabs' as *;
 
 $border-color: #dadada;
 $padding-base: 24px;
@@ -58,7 +59,6 @@ $transition-speed: 0.2s;
   .tabs {
     .tabs-list {
       font-size: var(--body-font-size-s);
-      padding: 1.5rem;
     }
   }
 }
