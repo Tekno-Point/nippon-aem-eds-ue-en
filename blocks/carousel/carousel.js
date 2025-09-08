@@ -1,6 +1,11 @@
 import Swiper from './swiper.js';
 
 export default function decorate(block) {
+  const carouselSection = document.querySelector('.section.carousel-style');
+  if (carouselSection) {
+    carouselSection.style.display = 'block';
+  }
+
   console.log('Carousel block detected');
 
   // Prepare Swiper wrapper

@@ -97,6 +97,10 @@
   margin-top: 64px;
 }
 
+.section.carousel-style {
+  display: none;
+}
+
 .section.carousel-style .columns-wrapper {
   max-width: 100%;
   padding: 12px 17px 12px 191px;
