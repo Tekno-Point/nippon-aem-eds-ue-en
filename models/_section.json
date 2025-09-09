@@ -33,7 +33,27 @@
             {
               "name": "Highlight",
               "value": "highlight"
-            }
+            },
+            {
+              "name": "Carousel Style",
+              "value": "carousel-style"
+            },
+            {
+              "name": "Legacy Style",
+              "value": "legacy-style"
+            },
+            {
+              "name": "Invest Style",
+            "value": "invest-style"
+          },
+          {
+            "name": "Width Container",
+            "value": "width-container"
+          },
+          {
+            "name": "Background Grey",
+            "value": "background-grey"
+          }
           ]
         }
       ]
@@ -50,6 +70,7 @@
         "hero",
         "cards",
         "columns",
+        "carousel",
         "fragment"
       ]
     }
