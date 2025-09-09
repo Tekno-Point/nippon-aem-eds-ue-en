@@ -28,48 +28,60 @@
 
 // Card common component
 
-.section.common-cards{
+.common-cards{
   cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 28%;
+  opacity: 0;
+  transform: translateX(120px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-.section.common-cards .cards > ul > li img{
+.common-cards.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.common-cards .cards > ul > li img{
   aspect-ratio: auto;
 }
 
-.section.common-cards ul{
+.common-cards ul{
   display: flex;
 }
 
-.section.common-cards .cards > ul > li{
+.common-cards .cards > ul > li{
   width: 410px;
+  border: none;
 }
 
-.section.common-cards .cards-card-image{
+.common-cards .cards-card-image{
   overflow: hidden;
   position: relative;
 }
 
-.section.common-cards .cards-card-image img{
+.common-cards .cards-card-image img{
   width: 426px;
   height: 285px;
   transition: transform 300ms ease-in-out;
 }
 
-.section.common-cards .cards > ul > li:hover{
+.common-cards .cards > ul > li:hover{
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%),
               0 4px 6px -4px rgb(0 0 0 / 10%);
 }
 
-  .section.common-cards .cards > ul > li:hover .cards-card-image img{
+  .common-cards .cards > ul > li:hover .cards-card-image img{
     transform: scale(1.1);
   }
 
-.section.common-cards .cards-card-body{
+.common-cards .cards-card-body{
   margin: 0;
   padding: 8px 24px;
 }
 
-.section.common-cards .cards-card-body p{
+.common-cards .cards-card-body p{
   font-size: 20px;
   line-height: 28px;
   color: rgb(0 0 0);
@@ -78,13 +90,13 @@
   margin: 32px 0;
 }
 
-.section.common-cards .cards-card-body > ul{
+.common-cards .cards-card-body > ul{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.section.common-cards .cards-card-body > ul > li{
+.common-cards .cards-card-body > ul > li{
   font-size: 15px;
   line-height: 28px;
   color: rgb(146 146 146);
@@ -92,23 +104,23 @@
   font-family: 'ubuntu medium',sans-serif;
 }
 
-.section.common-cards .cards > ul > li:hover .cards-card-body > ul > li{
+.common-cards .cards > ul > li:hover .cards-card-body > ul > li{
   color: rgb(237 28 36);
 }
 
-.section.common-cards .cards > ul > li:hover .cards-card-body > ul > li > img{
+.common-cards .cards > ul > li:hover .cards-card-body > ul > li > img{
   width: 48px;
   height: 48px;
 }
 
-.section.common-cards .cards-card-body > ul > li:last-child{
+.common-cards .cards-card-body > ul > li:last-child{
   display: none;
 }
 
-.section.common-cards .cards > ul > li:hover .cards-card-body > ul >  li:nth-child(2){
+.common-cards .cards > ul > li:hover .cards-card-body > ul >  li:nth-child(2){
   display: none;
 }
 
-.section.common-cards .cards > ul > li:hover .cards-card-body > ul > li:last-child{
+.common-cards .cards > ul > li:hover .cards-card-body > ul > li:last-child{
   display: block;
 }
