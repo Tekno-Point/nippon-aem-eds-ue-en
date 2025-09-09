@@ -441,12 +441,6 @@
             "label": "Tab Body Text"
           },
           {
-            "component": "reference",
-            "name": "col3_tabbody-listicon",
-            "label": "Tab Body List Icon",
-            "multi": false
-          },
-          {
             "component": "richtext",
             "name": "col3_tabbody-table",
             "label": "Tab Body Table Text"

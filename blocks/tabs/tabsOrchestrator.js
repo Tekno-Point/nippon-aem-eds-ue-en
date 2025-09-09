@@ -2,7 +2,7 @@ import {
   div, input, span, label,
 } from '../../scripts/dom-helper.js';
 
-export const tabTypes = ['global-network', 'overview-tab'];
+export const tabTypes = ['global-network', 'overview-tabs'];
 
 function globalNetworkTabs(tabs, panelContainer) {
   const positions = [
@@ -48,7 +48,7 @@ function overviewTabs(tabs, panelContainer) {
 function tabsOrchestrator(eleArr, tabType = 'default') {
   const orchObj = {
     'global-network': globalNetworkTabs,
-    'overview-tab': overviewTabs,
+    'overview-tabs': overviewTabs,
   };
 
   const orchestrator = orchObj[tabType];

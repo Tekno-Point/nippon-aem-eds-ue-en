@@ -42,8 +42,7 @@
             "template": {
               "name": "Overview Tab Item",
               "model": "overview-tab-item",
-              "col1_classes": "investment-overview",
-              "col3_tabBodyListIconAlt": "list icon"
+              "col1_classes": "investment-overview"
             }
           }
         }
@@ -174,12 +173,6 @@
               "component": "richtext",
               "name": "col3_tabbody-text",
               "label": "Tab Body Text"
-            },
-            {
-              "component": "reference",
-              "name": "col3_tabbody-listicon",
-              "label": "Tab Body List Icon",
-              "multi": false
             },
             {
               "component": "richtext",

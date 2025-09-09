@@ -231,8 +231,7 @@
                 "template": {
                   "name": "Overview Tab Item",
                   "model": "overview-tab-item",
-                  "col1_classes": "investment-overview",
-                  "col3_tabBodyListIconAlt": "list icon"
+                  "col1_classes": "investment-overview"
                 }
               }
             }
