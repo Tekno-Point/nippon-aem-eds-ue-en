@@ -84,8 +84,8 @@
                   "value": "left-tab"
                 },
                 {
-                  "name": "Overview Tab",
-                  "value": "overview-tab"
+                  "name": "Overview Tabs",
+                  "value": "overview-tabs"
                 }
               ]
             },
@@ -122,7 +122,7 @@
         },
         {
           "component": "richtext",
-          "name": "col1_tabButton",
+          "name": "col1_tab-button",
           "label": "Tab Heading"
         },
         {
@@ -155,63 +155,63 @@
         },
         {
           "component": "text",
-          "name": "col1_tabButton",
+          "name": "col1_tab-button",
           "label": "Tab Heading",
           "valueType": "string"
         },
         {
           "component": "container",
-          "name": "tabBody",
+          "name": "tabbody",
           "label": "Tab Body",
           "collapsible": true,
           "fields": [
             {
               "component": "reference",
-              "name": "col2_tabBodyVideo",
+              "name": "col2_tabbody-video",
               "label": "Tab Body Video"
             },
             {
               "component": "richtext",
-              "name": "col3_tabBodyText",
+              "name": "col3_tabbody-text",
               "label": "Tab Body Text"
             },
             {
               "component": "reference",
-              "name": "col3_tabBodyListIcon",
+              "name": "col3_tabbody-listicon",
               "label": "Tab Body List Icon",
               "multi": false
             },
             {
               "component": "richtext",
-              "name": "col3_tabBodyListText",
+              "name": "col3_tabbody-list",
               "label": "Tab Body List Text"
             },
             {
               "component": "richtext",
-              "name": "col3_tabBodyTableText",
+              "name": "col3_tabbody-table",
               "label": "Tab Body Table Text"
             }
           ]
         },
         {
           "component": "container",
-          "name": "tabBodyButton",
+          "name": "tabbody-button",
           "label": "Tab Body Button",
           "collapsible": true,
           "fields": [
             {
               "component": "aem-content",
-              "name": "col3_tabBodyButtonLink",
+              "name": "col3_tabbody-link",
               "label": "Tab Body Button Link"
             },
             {
               "component": "text",
-              "name": "col3_tabBodyButtonLinkText",
+              "name": "col3_tabbody-linkText",
               "label": "Tab Body Button Text"
             },
             {
               "component": "text",
-              "name": "col3_tabBodyButtonLinkTitle",
+              "name": "col3_tabbody-linkTitle",
               "label": "Tab Body Button Title"
             }
           ]
