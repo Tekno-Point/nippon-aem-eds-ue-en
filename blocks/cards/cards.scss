@@ -22,59 +22,61 @@
 
 .cards > ul > li img {
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 
-.section.common-cards .cards-card-image img {
+// Card common component
+
+.section.common-cards .cards-card-image img{
   width: 426px;
   height: 285px;
 }
 
-.section.common-cards .cards-card-body {
+.section.common-cards .cards-card-body{
   padding: 8px 24px;
 }
 
-.section.common-cards .cards-card-body p {
+.section.common-cards .cards-card-body p{
   font-size: 20px;
   line-height: 28px;
-  color: rgb(0, 0, 0);
+  color: rgb(0 0 0);
   font-weight: 400;
-  font-family: "ubuntu regular", sans-serif;
+  font-family: 'ubuntu regular',sans-serif;
   margin: 32px 0;
 }
 
-.section.common-cards .cards-card-body > ul {
+.section.common-cards .cards-card-body > ul{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.section.common-cards .cards-card-body > ul > li {
+.section.common-cards .cards-card-body > ul > li{
   font-size: 15px;
   line-height: 28px;
-  color: rgb(146, 146, 146);
+  color: rgb(146 146 146);
   font-weight: 400;
-  font-family: "ubuntu medium", sans-serif;
+  font-family: 'ubuntu medium',sans-serif;
 }
 
-.section.common-cards:hover .cards-card-body > ul > li {
-  color: rgb(237, 28, 36);
+.section.common-cards:hover .cards-card-body > ul > li{
+  color: rgb(237 28 36);
 }
 
-.section.common-cards:hover .cards-card-body > ul > li > img {
+.section.common-cards:hover .cards-card-body > ul > li > img{
   width: 48px;
   height: 48px;
 }
 
-.section.common-cards:hover .cards-card-body > ul > li > .card-red-icon {
+.section.common-cards:hover .cards-card-body > ul > li > .card-red-icon{
   display: none;
 }
 
-.section.common-cards:hover .cards-card-body > ul > li > .card-grey-icon {
+.section.common-cards:hover .cards-card-body > ul > li > .card-grey-icon{
   display: none;
 }
 
-.section.common-cards:hover .cards-card-body > ul > li > .card-red-icon {
+.section.common-cards:hover .cards-card-body > ul > li > .card-red-icon{
   display: block;
 }
