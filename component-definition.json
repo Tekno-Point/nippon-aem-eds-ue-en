@@ -231,7 +231,9 @@
                 "template": {
                   "name": "Overview Tab Item",
                   "model": "overview-tab-item",
-                  "col1_classes": "investment-overview"
+                  "col1_classes": "investment-overview",
+                  "col3_tabbody-linkText": "know more",
+                  "col3_tabbody-linkTitle": "Know More"
                 }
               }
             }

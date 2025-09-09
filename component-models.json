@@ -437,7 +437,7 @@
           },
           {
             "component": "richtext",
-            "name": "col3_tabbody-text",
+            "name": "col2_tabbody-text",
             "label": "Tab Body Text"
           },
           {
