@@ -58,6 +58,10 @@
           {
             "name": "Style Column 5",
             "value": "style-column-5"
+          },
+          {
+            "name": "Style Column 6",
+            "value": "style-column-6"
           }
         ]
       }
