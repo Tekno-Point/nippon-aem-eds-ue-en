@@ -31,7 +31,7 @@ function globalNetworkTabs(tabs, panelContainer) {
 function overviewTabs(tabs, panelContainer) {
   [...tabs.children].forEach((tab) => {
     const isSelected = tab.getAttribute('aria-selected') === 'true';
-    const inpt = input({ type: 'radio', name: 'tab-radio', checked: isSelected });
+    const inpt = input({ type: 'radio', class: 'hidden', name: 'tab-radio', checked: isSelected });
     tab.addEventListener('click', () => { inpt.checked = true; });
     const radioIcon = span({ class: 'radio-icon' }, span({ class: 'radio-icon-dot' }));
     const labelEle = label({}, inpt, radioIcon);

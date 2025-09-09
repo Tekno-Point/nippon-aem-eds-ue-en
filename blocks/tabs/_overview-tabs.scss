@@ -1,6 +1,23 @@
+.section:has(.tabs.overview-tabs) {
+    &>div {
+        padding: 4rem;
+    }
+
+    @media (width >=1050px) {
+        &>div {
+            max-width: 90%;
+            width: 100%;
+            padding: 0;
+        }
+    }
+}
+
 .tabs.overview-tabs {
     .tabs-list {
         .tabs-tab {
+            background-color: transparent;
+            border: none;
+
             label {
                 display: flex;
                 cursor: pointer;
@@ -26,6 +43,51 @@
                         background-color: #ef4444;
                     }
                 }
+
+                p {
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    letter-spacing: 0;
+                    color: #4A4A4A;
+                }
+            }
+        }
+    }
+
+    .tabs-panel-container {
+        .tabs-panel {
+            margin-left: 1rem;
+            margin-right: 1rem;
+            display: flex;
+            flex-direction: column;
+            place-content: flex-start;
+            align-items: flex-start;
+            gap: 0.25rem;
+            align-self: stretch;
+            background-color: transparent;
+            border: none;
+            padding-bottom: 0;
+
+            &[aria-hidden='true'] {
+                display: none;
+            }
+
+            &>div:first-child {
+                width: 100%;
+                min-height: 25.5rem;
+            }
+
+            h2 {
+                margin: 0;
+                display: inline-block;
+                max-width: 100%;
+                align-self: stretch;
+                font-family: inherit;
+                color: black;
+                font-weight: 400;
+                line-height: 42px;
+                font-size: 1.5rem;
             }
         }
     }
@@ -41,6 +103,30 @@
                     }
                 }
             }
+
+            .tabs-panel-container {
+                .tabs-panel {
+                    &>div:first-child {
+                        max-height: 220px;
+                        min-height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (width >=451px) {
+    .tabs.overview-tabs {
+        .tabs-panel-container {
+            .tabs-panel {
+                gap: 1.5rem;
+                padding-bottom: 1.5rem;
+
+                h2 {
+                    font-size: 1.75rem;
+                }
+            }
         }
     }
 }
@@ -51,10 +137,19 @@
             .tabs-tab {
                 label {
                     gap: 1rem;
-    
-                    .radio-icon {
-                        border-width: 0;
-                    }
+                }
+            }
+        }
+
+        .tabs-panel-container {
+            .tabs-panel {
+                margin-left: auto;
+                margin-right: auto;
+                flex-direction: row;
+                gap: 4.375rem;
+
+                &>div:first-child {
+                    width: 45%;
                 }
             }
         }

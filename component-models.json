@@ -448,11 +448,6 @@
           },
           {
             "component": "richtext",
-            "name": "col3_tabbody-list",
-            "label": "Tab Body List Text"
-          },
-          {
-            "component": "richtext",
             "name": "col3_tabbody-table",
             "label": "Tab Body Table Text"
           }
