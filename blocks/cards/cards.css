@@ -26,12 +26,43 @@
   object-fit: cover;
 }
 
+.section.common-cards {
+  cursor: pointer;
+}
+
+.section.common-cards .cards > ul > li img {
+  aspect-ratio: auto;
+}
+
+.section.common-cards ul {
+  display: flex;
+}
+
+.section.common-cards .cards > ul > li {
+  width: 410px;
+}
+
+.section.common-cards .cards-card-image {
+  overflow: hidden;
+  position: relative;
+}
+
 .section.common-cards .cards-card-image img {
   width: 426px;
   height: 285px;
+  transition: transform 300ms ease-in-out;
+}
+
+.section.common-cards .cards > ul > li:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.section.common-cards .cards > ul > li:hover .cards-card-image img {
+  transform: scale(1.1);
 }
 
 .section.common-cards .cards-card-body {
+  margin: 0;
   padding: 8px 24px;
 }
 
@@ -58,23 +89,23 @@
   font-family: "ubuntu medium", sans-serif;
 }
 
-.section.common-cards:hover .cards-card-body > ul > li {
+.section.common-cards .cards > ul > li:hover .cards-card-body > ul > li {
   color: rgb(237, 28, 36);
 }
 
-.section.common-cards:hover .cards-card-body > ul > li > img {
+.section.common-cards .cards > ul > li:hover .cards-card-body > ul > li > img {
   width: 48px;
   height: 48px;
 }
 
-.section.common-cards:hover .cards-card-body > ul > li > .card-red-icon {
+.section.common-cards .cards-card-body > ul > li:last-child {
   display: none;
 }
 
-.section.common-cards:hover .cards-card-body > ul > li > .card-grey-icon {
+.section.common-cards .cards > ul > li:hover .cards-card-body > ul > li:nth-child(2) {
   display: none;
 }
 
-.section.common-cards:hover .cards-card-body > ul > li > .card-red-icon {
+.section.common-cards .cards > ul > li:hover .cards-card-body > ul > li:last-child {
   display: block;
 }

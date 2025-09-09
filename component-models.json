@@ -160,6 +160,10 @@
           {
             "name": "Common Cards",
             "value": "common-cards"
+          },
+          {
+            "name": "Column Red BG",
+            "value": "column-red-bg"
           }
         ]
       }
