@@ -306,7 +306,7 @@
               "label": "Tab Body Text"
             },
             {
-              "component": "richtext",
+              "component": "raw",
               "name": "col3_tabbody-table",
               "label": "Tab Body Table Text"
             }
