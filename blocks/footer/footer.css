@@ -1,20 +1,208 @@
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+    background-color: var(--light-color);
+    font-size: var(--body-font-size-xs);
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+footer .footer>div {
+    margin: auto;
+    max-width: 1200px;
+    padding: 40px 24px 24px;
 }
 
 footer .footer p {
-  margin: 0;
+    margin: 0;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
-  }
+@media (width >=900px) {
+    footer .footer>div {
+        padding: 40px 32px 24px;
+    }
+}
+
+/* css */
+
+footer .footer.block {
+    background-color: #f5f5f5;
+}
+
+footer .footer.block .columns-wrapper:first-of-type .columns {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+footer .footer.block .columns-wrapper:first-of-type .columns div div h2 {
+    font-size: 1.4rem;
+    letter-spacing: -0.01em;
+    line-height: 4.25rem;
+    margin: unset;
+    padding: unset;
+    font-family: "ubuntu regular", sans-serif;
+    font-weight: 400;
+}
+
+footer .footer.block .columns-wrapper:first-of-type .columns div div p {
+    /* width: 10.375rem; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+footer .footer.block .columns-wrapper:first-of-type .columns div div p a {
+    border-radius: unset;
+    background: unset;
+    min-width: 6.125rem;
+    font-size: 0.938rem;
+    color: #e03028;
+    margin: unset;
+    padding: 10px 16px 10px 6px;
+    text-align: start;
+    border-color: #e03028;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer.block .columns-wrapper .columns div div ul li a:hover {
+    text-decoration: none;
+}
+
+footer .footer.block .columns-wrapper:nth-child(2) .columns div div p {
+    font-size: 0.938rem;
+}
+
+footer .footer.block .columns-wrapper:nth-child(2) .columns div div ul li a,
+footer .footer.block .columns-wrapper:nth-child(2) .columns div div ul li p {
+    font-size: 0.938rem;
+    color: #4a4a4a;
+}
+
+footer .footer.block .columns-wrapper:first-of-type .columns div div ul li ul li a {
+    color: #4a4a4a;
+    font-size: 0.938rem;
+    line-height: 23px;
+}
+
+footer .footer.block .columns-wrapper:first-of-type .columns div div p a:hover {
+    background-color: #ed1c24;
+    color: #fff;
+}
+
+footer .footer.block .columns-wrapper:first-of-type .columns div div p a span {
+    width: 20px;
+    height: 16px;
+    display: inline-block;
+    margin-left: 1.5rem;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+footer .footer.block .columns-wrapper:first-of-type .columns div div p a span img {
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+footer .footer.block .columns-wrapper:first-of-type .columns div div p a:hover span img {
+    /* background-color: rgba(237, 28, 36, 1);
+    color: #fff; */
+    filter: brightness(0) invert(1);
+    rotate: -45deg;
+}
+
+footer .footer.block .columns-wrapper:first-of-type .columns div div>ul {
+    padding: unset;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+footer .footer.block .columns-wrapper:nth-child(2) .columns div div ul {
+    list-style: none;
+    padding: unset;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1.25rem;
+    font-size: 0.938rem;
+    color: #4a4a4a;
+    margin: unset;
+}
+
+footer .footer.block .columns-wrapper:first-of-type .columns div div>ul>li>ul {
+    list-style: none;
+    padding: unset;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+footer .footer.block .columns-wrapper:first-of-type .columns div div ul li p {
+    color: #000;
+    font-family: 'ubuntu medium', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+footer .footer.block .columns-wrapper:nth-child(2) {
+    border-top: 1px solid #d3d3d3;
+    margin-top: 2.5rem;
+}
+
+footer .footer.block .columns-wrapper:nth-child(2) .columns {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2.2rem;
+}
+
+footer .footer.block .columns-wrapper:nth-child(2) .columns>div:first-child {
+    order: 99;
+}
+
+@media (width > 768px) {
+    footer .footer.block>div {
+        /* width: 90%; */
+
+        max-width: 90%;
+        padding: 3rem 1rem;
+        width: 80%;
+
+        /* padding: 0 3rem; */
+    }
+
+    footer .footer.block .columns-wrapper:first-of-type .columns {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 2.5rem;
+        align-items: start;
+    }
+
+    /* footer .footer.block .columns-wrapper:first-of-type .columns > div {
+    } */
+
+    footer .footer.block .columns-wrapper:first-of-type .columns>div:first-child {
+        grid-column: span 2 / span 2;
+    }
+
+    footer .footer.block .columns-wrapper:first-of-type .columns div div h2 {
+        line-height: 4.25rem;
+        letter-spacing: -0.01em;
+        font-size: 3rem;
+        color: #000;
+        margin-bottom: 1.25rem;
+    }
+
+    footer .footer.block .columns-wrapper:nth-child(2) .columns {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    footer .footer.block .columns-wrapper:nth-child(2) .columns>div:first-child {
+        order: unset;
+    }
+
+    footer .footer.block .columns-wrapper:first-of-type .columns div div p a span {
+        margin-left: 0.5rem;
+    }
 }

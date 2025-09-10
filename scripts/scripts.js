@@ -12,6 +12,70 @@ import {
   loadCSS,
 } from './aem.js';
 
+/** ******************** Fragment Auto Block START ********************* */
+/*
+ * Fragment Block
+ * Include content on a page as a fragment.
+ * https://www.aem.live/developer/block-collection/fragment
+ */
+
+/**
+ * Loads a fragment.
+ * @param {string} path The path to the fragment
+ * @returns {HTMLElement} The root element of the fragment
+ */
+export async function loadFragment(path) {
+  if (path && path.startsWith('/')) {
+    // eslint-disable-next-line no-param-reassign
+    path = path.replace(/(\.plain)?\.html/, '');
+    const resp = await fetch(`${path}.plain.html`);
+    if (resp.ok) {
+      const main = document.createElement('main');
+      main.innerHTML = await resp.text();
+
+      // reset base path for media to fragment base
+      const resetAttributeBase = (tag, attr) => {
+        main.querySelectorAll(`${tag}[${attr}^="./media_"]`).forEach((elem) => {
+          elem[attr] = new URL(elem.getAttribute(attr), new URL(path, window.location)).href;
+        });
+      };
+      resetAttributeBase('img', 'src');
+      resetAttributeBase('source', 'srcset');
+
+      // eslint-disable-next-line no-use-before-define
+      decorateMain(main);
+      await loadSections(main);
+      return main;
+    }
+  }
+  return null;
+}
+
+export async function decorateFragment(block) {
+  const link = block.querySelector('a');
+  const path = link ? link.getAttribute('href') : block.textContent.trim();
+  const fragment = await loadFragment(path);
+  if (fragment) {
+    const fragmentSection = fragment.querySelector(':scope .section');
+    if (fragmentSection) {
+      block.classList.add(...fragmentSection.classList);
+      block.classList.remove('section');
+      block.replaceChildren(...fragmentSection.childNodes);
+    }
+  }
+}
+
+/** ******************** Fragment Auto Block END ********************* */
+/** ******************** LOAD Auto Block START ********************* */
+export function loadAutoBlock(main) {
+  main.querySelectorAll('a').forEach((anchor) => {
+    if (anchor?.href?.includes('/fragments/')) {
+      decorateFragment(anchor.parentElement);
+    }
+  });
+}
+/** ******************** LOAD Auto Block END ********************* */
+
 /**
  * Moves all the attributes from a given elmenet to another given element.
  * @param {Element} from the element to copy attributes from
@@ -62,9 +126,10 @@ async function loadFonts() {
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
  */
-function buildAutoBlocks() {
+function buildAutoBlocks(main) {
   try {
     // TODO: add auto block, if needed
+    loadAutoBlock(main);
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);
@@ -125,6 +190,7 @@ async function loadLazy(doc) {
   loadFooter(doc.querySelector('footer'));
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
+  if (window.location.href.includes('author-p')) loadCSS(`${window.hlx.codeBasePath}/styles/ue-styles.css`);
   loadFonts();
 }
 
