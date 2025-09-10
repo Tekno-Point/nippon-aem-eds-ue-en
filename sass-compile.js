@@ -54,7 +54,7 @@ for (const folder of ['styles', 'blocks']) {
 // Watch for changes in SCSS files
 fs.watch('.', { recursive: true }, (eventType, fileName) => {
   if (path.extname(fileName) === '.scss' && eventType === 'change') {
-    if (!shouldIgnore(fileName)) {
+    if (!shouldIgnore(path.basename(fileName))) {
       compileAndSave(path.join(__dirname, fileName));
     } else {
       console.log(`${fileName} has been explicitly ignored for compilation`);
