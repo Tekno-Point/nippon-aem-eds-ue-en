@@ -172,6 +172,10 @@
           {
             "name": "Amplify Style",
             "value": "amplify-style"
+          },
+          {
+            "name": "Equity Style",
+            "value": "equity-style"
           }
         ]
       }
