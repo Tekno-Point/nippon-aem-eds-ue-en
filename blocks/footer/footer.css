@@ -3,7 +3,7 @@ footer {
     font-size: var(--body-font-size-xs);
 }
 
-footer .footer > div {
+footer .footer>div {
     margin: auto;
     max-width: 1200px;
     padding: 40px 24px 24px;
@@ -13,8 +13,8 @@ footer .footer p {
     margin: 0;
 }
 
-@media (width >= 900px) {
-    footer .footer > div {
+@media (width >=900px) {
+    footer .footer>div {
         padding: 40px 32px 24px;
     }
 }
@@ -35,9 +35,10 @@ footer .footer.block .columns-wrapper:first-of-type .columns div div h2 {
     font-size: 1.4rem;
     letter-spacing: -0.01em;
     line-height: 4.25rem;
-    font-weight: 300;
     margin: unset;
     padding: unset;
+    font-family: "ubuntu regular", sans-serif;
+    font-weight: 400;
 }
 
 footer .footer.block .columns-wrapper:first-of-type .columns div div p {
@@ -75,17 +76,7 @@ footer .footer.block .columns-wrapper:nth-child(2) .columns div div ul li p {
     color: #4a4a4a;
 }
 
-footer
-    .footer.block
-    .columns-wrapper:first-of-type
-    .columns
-    div
-    div
-    ul
-    li
-    ul
-    li
-    a {
+footer .footer.block .columns-wrapper:first-of-type .columns div div ul li ul li a {
     color: #4a4a4a;
     font-size: 0.938rem;
     line-height: 23px;
@@ -106,38 +97,20 @@ footer .footer.block .columns-wrapper:first-of-type .columns div div p a span {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-footer
-    .footer.block
-    .columns-wrapper:first-of-type
-    .columns
-    div
-    div
-    p
-    a
-    span
-    img {
+footer .footer.block .columns-wrapper:first-of-type .columns div div p a span img {
     transition-duration: 0.5s;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-footer
-    .footer.block
-    .columns-wrapper:first-of-type
-    .columns
-    div
-    div
-    p
-    a:hover
-    span
-    img {
+footer .footer.block .columns-wrapper:first-of-type .columns div div p a:hover span img {
     /* background-color: rgba(237, 28, 36, 1);
     color: #fff; */
     filter: brightness(0) invert(1);
     rotate: -45deg;
 }
 
-footer .footer.block .columns-wrapper:first-of-type .columns div div > ul {
+footer .footer.block .columns-wrapper:first-of-type .columns div div>ul {
     padding: unset;
     list-style: none;
     display: flex;
@@ -154,17 +127,10 @@ footer .footer.block .columns-wrapper:nth-child(2) .columns div div ul {
     gap: 1.25rem;
     font-size: 0.938rem;
     color: #4a4a4a;
+    margin: unset;
 }
 
-footer
-    .footer.block
-    .columns-wrapper:first-of-type
-    .columns
-    div
-    div
-    > ul
-    > li
-    > ul {
+footer .footer.block .columns-wrapper:first-of-type .columns div div>ul>li>ul {
     list-style: none;
     padding: unset;
     display: flex;
@@ -174,6 +140,8 @@ footer
 
 footer .footer.block .columns-wrapper:first-of-type .columns div div ul li p {
     color: #000;
+    font-family: 'ubuntu medium', sans-serif;
+    font-style: normal;
     font-weight: 500;
 }
 
@@ -189,11 +157,19 @@ footer .footer.block .columns-wrapper:nth-child(2) .columns {
     gap: 2.2rem;
 }
 
+footer .footer.block .columns-wrapper:nth-child(2) .columns>div:first-child {
+    order: 99;
+}
+
 @media (width > 768px) {
-    footer .footer.block > div {
-        width: 90%;
+    footer .footer.block>div {
+        /* width: 90%; */
+
         max-width: 90%;
         padding: 3rem 1rem;
+        width: 80%;
+
+        /* padding: 0 3rem; */
     }
 
     footer .footer.block .columns-wrapper:first-of-type .columns {
@@ -206,18 +182,13 @@ footer .footer.block .columns-wrapper:nth-child(2) .columns {
     /* footer .footer.block .columns-wrapper:first-of-type .columns > div {
     } */
 
-    footer
-        .footer.block
-        .columns-wrapper:first-of-type
-        .columns
-        > div:first-child {
+    footer .footer.block .columns-wrapper:first-of-type .columns>div:first-child {
         grid-column: span 2 / span 2;
     }
 
     footer .footer.block .columns-wrapper:first-of-type .columns div div h2 {
         line-height: 4.25rem;
         letter-spacing: -0.01em;
-        font-weight: 300;
         font-size: 3rem;
         color: #000;
         margin-bottom: 1.25rem;
@@ -227,15 +198,11 @@ footer .footer.block .columns-wrapper:nth-child(2) .columns {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
-    footer
-        .footer.block
-        .columns-wrapper:first-of-type
-        .columns
-        div
-        div
-        p
-        a
-        span {
+    footer .footer.block .columns-wrapper:nth-child(2) .columns>div:first-child {
+        order: unset;
+    }
+
+    footer .footer.block .columns-wrapper:first-of-type .columns div div p a span {
         margin-left: 0.5rem;
     }
 }
