@@ -6,7 +6,14 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+// Automatically ignore files starting with an underscore (_)
 const ignoredFiles = [];
+
+// Helper function to check if the file should be ignored (based on naming convention)
+const shouldIgnore = (fileName) => {
+  // Ignore files starting with '_'
+  return fileName.startsWith('_') || ignoredFiles.includes(fileName);
+};
 
 const compileAndSave = async (sassFile) => {
   const dest = sassFile.replace(path.extname(sassFile), '.css');
@@ -20,12 +27,14 @@ const compileAndSave = async (sassFile) => {
 const processFiles = async (parent) => {
   const files = await readdir(parent, { withFileTypes: true });
   for (const file of files) {
+    const filePath = path.join(parent, file.name);
+
     if (file.isDirectory()) {
-      await processFiles(path.join(parent, file.name));
+      await processFiles(filePath);
     }
     if (path.extname(file.name) === '.scss') {
-      if (!ignoredFiles.includes(file.name)) {
-        await compileAndSave(path.join(parent, file.name));
+      if (!shouldIgnore(file.name)) {
+        await compileAndSave(filePath);
       } else {
         console.log(`${file.name} has been explicitly ignored for compilation`);
       }
@@ -42,10 +51,10 @@ for (const folder of ['styles', 'blocks']) {
   }
 }
 
+// Watch for changes in SCSS files
 fs.watch('.', { recursive: true }, (eventType, fileName) => {
   if (path.extname(fileName) === '.scss' && eventType === 'change') {
-    console.log(fileName);
-    if (!ignoredFiles.includes(fileName)) {
+    if (!shouldIgnore(fileName)) {
       compileAndSave(path.join(__dirname, fileName));
     } else {
       console.log(`${fileName} has been explicitly ignored for compilation`);
