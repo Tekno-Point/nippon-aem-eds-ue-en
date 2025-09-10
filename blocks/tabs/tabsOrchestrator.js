@@ -1,5 +1,7 @@
 import {
   div, input, span, label,
+  getVideoElement,
+  fetchPlaceholders,
 } from '../../scripts/dom-helper.js';
 
 export const tabTypes = ['global-network', 'overview-tabs'];
@@ -28,7 +30,19 @@ function globalNetworkTabs(tabs, panelContainer) {
   });
 }
 
-function overviewTabs(tabs, panelContainer) {
+async function overviewTabs(tabs, panelContainer) {
+  const { publisherUrl } = await fetchPlaceholders();
+
+  [...panelContainer.children].forEach((panel, i) => {
+    const [vidlink, ...rest] = [...panel.firstElementChild.children];
+    const col2 = panel.children[1];
+    const rightContainer = div({ class: 'right-container'}, div({ }, ...rest), col2);
+    panel.append(rightContainer);
+
+    const video = getVideoElement(publisherUrl + vidlink.querySelector('a')?.getAttribute('href'), true, true);
+    vidlink.replaceWith(video);
+  });
+
   [...tabs.children].forEach((tab) => {
     const isSelected = tab.getAttribute('aria-selected') === 'true';
     const inpt = input({ type: 'radio', class: 'hidden', name: 'tab-radio', checked: isSelected });

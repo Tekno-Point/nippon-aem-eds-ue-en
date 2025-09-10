@@ -67,15 +67,10 @@
             align-self: stretch;
             background-color: transparent;
             border: none;
-            padding-bottom: 0;
+            padding: 0;
 
             &[aria-hidden='true'] {
                 display: none;
-            }
-
-            &>div:first-child {
-                width: 100%;
-                min-height: 25.5rem;
             }
 
             h2 {
@@ -89,6 +84,30 @@
                 line-height: 42px;
                 font-size: 1.5rem;
             }
+
+            &>div:first-child {
+                width: 100%;
+                min-height: 25.5rem;
+            }
+
+            &>div:nth-child(2) {
+                display: flex;
+                max-width: 100%;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 1.5rem;
+                align-self: stretch;
+                line-height: 30px;
+                font-size: 18px;
+                font-weight: 400;
+                color: #4a4a4a;
+
+                p {
+                    margin: 0;
+                }
+            }
+
         }
     }
 }
@@ -109,6 +128,12 @@
                     &>div:first-child {
                         max-height: 220px;
                         min-height: 200px;
+                    }
+
+                    &>div:nth-child(2) {
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        padding-top: 1rem;
                     }
                 }
             }
@@ -148,8 +173,8 @@
                 flex-direction: row;
                 gap: 4.375rem;
 
-                &>div:first-child {
-                    width: 45%;
+                &>div:first-child video {
+                    max-width: 618px;
                 }
             }
         }

@@ -51,7 +51,8 @@
     "id": "tabs",
     "components": [
       "image-tab-item",
-      "overview-tab-item"
+      "overview-tab-item",
+      "overview-tab-test"
     ]
   }
 ]

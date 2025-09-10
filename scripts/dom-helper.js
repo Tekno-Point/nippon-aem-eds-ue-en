@@ -160,3 +160,35 @@ console.log('Publisher URL:', publisherUrl);
 
 */
 /** ******************** Placeholders END ********************* */
+
+/** ******************** Video Element maker START ********************* */
+/**
+ * 
+ * @param {string} source 
+ * @param {boolean} autoplay 
+ * @param {*} background 
+ * @returns 
+ */
+export function getVideoElement(source, autoplay, background) {
+  const video = document.createElement('video');
+  video.setAttribute('controls', '');
+  if (autoplay) video.setAttribute('autoplay', '');
+  if (background) {
+    video.setAttribute('loop', '');
+    video.setAttribute('playsinline', '');
+    video.removeAttribute('controls');
+    video.addEventListener('canplay', () => {
+      video.muted = true;
+      if (autoplay) video.play();
+    });
+  }
+
+  const sourceEl = document.createElement('source');
+  sourceEl.setAttribute('src', source);
+  sourceEl.setAttribute('type', `video/${source.split('.').pop()}`);
+  video.append(sourceEl);
+
+  return video;
+}
+
+/* ******************** Video Element maker END ********************* */
