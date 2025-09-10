@@ -21,22 +21,4 @@ export default function decorate(block) {
   });
   block.textContent = '';
   block.append(ul);
-
-  const cards = document.querySelectorAll('.common-cards');
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target); // Animate only once
-      }
-    });
-  }, {
-    threshold: 0.2, // Trigger when 20% of element is visible
-  });
-
-  cards.forEach((card) => {
-    card.classList.add('hidden'); // Initial hidden state
-    observer.observe(card);
-  });
 }

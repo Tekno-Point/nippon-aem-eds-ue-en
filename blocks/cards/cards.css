@@ -32,13 +32,13 @@
   right: 0;
   top: 28%;
   opacity: 0;
-  transform: translateX(120px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transform: translateX(100px);
 }
 
 .common-cards.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
 }
 
 .common-cards .cards > ul > li img {
