@@ -62,6 +62,10 @@
           {
             "name": "Style Column 6",
             "value": "style-column-6"
+          },
+           {
+            "name": "Common style",
+            "value": "common-style"
           }
         ]
       }

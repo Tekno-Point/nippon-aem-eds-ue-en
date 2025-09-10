@@ -164,6 +164,14 @@
           {
             "name": "Column Red BG",
             "value": "column-red-bg"
+          },
+          {
+            "name": "Padding Container",
+            "value": "padding-container"
+          },
+          {
+            "name": "Amplify Style",
+            "value": "amplify-style"
           }
         ]
       }
@@ -275,6 +283,10 @@
           {
             "name": "Style Column 6",
             "value": "style-column-6"
+          },
+          {
+            "name": "Common style",
+            "value": "common-style"
           }
         ]
       }
