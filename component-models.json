@@ -136,6 +136,42 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "Carousel Style",
+            "value": "carousel-style"
+          },
+          {
+            "name": "Legacy Style",
+            "value": "legacy-style"
+          },
+          {
+            "name": "Invest Style",
+            "value": "invest-style"
+          },
+          {
+            "name": "Width Container",
+            "value": "width-container"
+          },
+          {
+            "name": "Background Grey",
+            "value": "background-grey"
+          },
+          {
+            "name": "Common Cards",
+            "value": "common-cards"
+          },
+          {
+            "name": "Column Red BG",
+            "value": "column-red-bg"
+          },
+          {
+            "name": "Padding Container",
+            "value": "padding-container"
+          },
+          {
+            "name": "Amplify Style",
+            "value": "amplify-style"
           }
         ]
       }
@@ -161,6 +197,48 @@
     ]
   },
   {
+    "id": "carousel",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Carousel Style",
+            "value": "carousel-style"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "carousel-item",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "col1_image",
+        "label": "Carousel Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "col1_imageAlt",
+        "label": "Carousel Image Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "col1_text",
+        "value": "",
+        "label": "Card Description",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "columns",
     "fields": [
       {
@@ -176,6 +254,53 @@
         "name": "rows",
         "value": "",
         "label": "Rows"
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Style Column 1",
+            "value": "style-column-1"
+          },
+          {
+            "name": "Style Column 2",
+            "value": "style-column-2"
+          },
+          {
+            "name": "Style Column 3",
+            "value": "style-column-3"
+          },
+          {
+            "name": "Style Column 4",
+            "value": "style-column-4"
+          },
+          {
+            "name": "Style Column 5",
+            "value": "style-column-5"
+          },
+          {
+            "name": "Style Column 6",
+            "value": "style-column-6"
+          },
+          {
+            "name": "Common style",
+            "value": "common-style"
+          },
+          {
+            "name": "Card Column",
+            "value": "card-column"
+          },
+          {
+            "name": "Equity Style",
+            "value": "equity-style"
+          },
+          {
+            "name": "Private Credit Style",
+            "value": "private-credit-style"
+          }
+        ]
       }
     ]
   },

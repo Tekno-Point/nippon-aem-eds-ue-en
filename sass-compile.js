@@ -1,3 +1,4 @@
+/* eslint-disable */
 import sass from 'sass';
 import fs from 'fs';
 import path from 'path';

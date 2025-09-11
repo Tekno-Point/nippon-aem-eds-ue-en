@@ -33,7 +33,43 @@
             {
               "name": "Highlight",
               "value": "highlight"
-            }
+            },
+            {
+              "name": "Carousel Style",
+              "value": "carousel-style"
+            },
+            {
+              "name": "Legacy Style",
+              "value": "legacy-style"
+            },
+            {
+              "name": "Invest Style",
+            "value": "invest-style"
+          },
+          {
+            "name": "Width Container",
+            "value": "width-container"
+          },
+          {
+            "name": "Background Grey",
+            "value": "background-grey"
+          },
+          {
+            "name": "Common Cards",
+            "value": "common-cards"
+          },
+           {
+            "name": "Column Red BG",
+            "value": "column-red-bg"
+          },
+          {
+            "name": "Padding Container",
+            "value": "padding-container"
+          },
+          {
+            "name": "Amplify Style",
+            "value": "amplify-style"
+          }
           ]
         }
       ]
@@ -50,6 +86,7 @@
         "hero",
         "cards",
         "columns",
+        "carousel",
         "fragment"
       ]
     }
