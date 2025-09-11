@@ -1123,7 +1123,7 @@
                 font-size: 15px;
                 line-height: 15px;
                 font-weight: 400;
-                font-family: "poppin regular", sans-serif;
+                font-family: "ubuntu regular", sans-serif;
                 color: rgb(224 48 40);
 
                 img {
@@ -1220,6 +1220,186 @@
               > ol {
                 width: 188px;
                 margin-top: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Private Credit Style
+// Private Credit Component
+.section {
+  .private-credit-style {
+    &.columns {
+      > div {
+        gap: 130px;
+
+        > div {
+          &:nth-child(1) {
+            flex: 1 0 50%;
+
+            p {
+              &:nth-child(1),
+              &:nth-child(4) {
+                font-size: 30px;
+                line-height: 49px;
+                font-weight: 300;
+                font-family: "ubuntu thin", sans-serif;
+                color: rgb(0 0 0);
+              }
+
+              &:nth-child(2) {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+                font-family: "ubuntu medium", sans-serif;
+                color: rgb(224 48 40);
+                padding-top: 15px;
+              }
+
+              &:nth-child(3) {
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 400;
+                font-family: "ubuntu regular", sans-serif;
+                color: rgb(109 109 109);
+                padding-bottom: 15px;
+              }
+            }
+
+            img {
+              width: 569px;
+              height: 430px;
+            }
+          }
+
+          &:nth-child(2) {
+            p {
+              &:nth-child(1) {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                font-family: "ubuntu regular", sans-serif;
+                color: rgb(0 0 0);
+                padding-bottom: 16px;
+              }
+
+              &:nth-child(2) {
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 400;
+                font-family: "ubuntu regular", sans-serif;
+                color: rgb(109 109 109);
+              }
+
+              &:nth-child(4) {
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 400;
+                font-family: "ubuntu regular", sans-serif;
+                color: rgb(109 109 109);
+                margin-top: 16px;
+              }
+            }
+
+            ul {
+              margin-top: 32px;
+
+              li {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                font-family: "ubuntu regular", sans-serif;
+                color: rgb(0 0 0);
+                padding-bottom: 16px;
+
+                img {
+                  width: 13px;
+                  height: 13px;
+                  display: inline-block;
+                  margin-right: 5px;
+                  margin-top: 3px;
+                }
+              }
+            }
+
+            ol {
+              padding: 12px 5px 12px 10px;
+              border: 1px solid rgb(224 48 40);
+              width: 191px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-top: 40px;
+              cursor: pointer;
+              transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+              animation-duration: 0.5s;
+
+              li {
+                font-size: 15px;
+                line-height: 15px;
+                font-weight: 400;
+                font-family: "ubuntu regular", sans-serif;
+                color: rgb(224 48 40);
+
+                img {
+                  width: 20px;
+                  height: 16px;
+                  margin-top: 3px;
+                }
+              }
+
+              &:hover {
+                background-color: rgb(224 48 40);
+
+                li {
+                  color: #fff;
+
+                  img {
+                    filter: brightness(0) saturate(100%) invert(100%);
+                    transform: rotate(-40deg);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive
+@media (width <= 768px) {
+  .section {
+    .private-credit-style {
+      &.columns {
+        > div {
+          gap: 24px;
+
+          > div {
+            &:nth-child(1) {
+              flex: 1 0 100%;
+
+              p {
+                &:nth-child(1),
+                &:nth-child(4) {
+                  font-size: 29px;
+                  line-height: 39px;
+                }
+
+                &:nth-child(2) {
+                  font-size: 18px;
+                  line-height: 27px;
+                }
+              }
+
+              img {
+                width: 100%;
+                height: auto;
               }
             }
           }

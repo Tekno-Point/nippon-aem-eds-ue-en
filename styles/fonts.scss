@@ -2,30 +2,26 @@
   font-family: 'ubuntu medium';
   font-style: normal;
   font-weight: 500;
-  font-display: swap;
-  src: url('/fonts/Ubuntu-Medium.ttf') format('ttf');
+  src: url('/fonts/Ubuntu-Medium.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'ubuntu Bold';
   font-style: normal;
   font-weight: 600;
-  font-display: swap;
-  src: url('/fonts/Ubuntu-Bold.ttf') format('ttf');
+  src: url('/fonts/Ubuntu-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'ubuntu regular';
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/Ubuntu-R.ttf') format('ttf');
+  src: url('/fonts/Ubuntu-R.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'ubuntu thin';
   font-style: normal;
   font-weight: 300;
-  font-display: swap;
-  src: url('/fonts/Ubuntu-Th.ttf') format('ttf');
+  src: url('/fonts/Ubuntu-Th.ttf') format('truetype');
 }
