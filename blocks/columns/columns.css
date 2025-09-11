@@ -775,3 +775,10 @@
     flex: 1 0 100%;
   }
 }
+.section.card-column .columns > div {
+  gap: 84px;
+}
+
+.section.card-column .columns div > div:nth-child(1) {
+  flex: 1 0 50%;
+}

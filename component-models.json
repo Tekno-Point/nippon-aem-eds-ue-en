@@ -172,10 +172,6 @@
           {
             "name": "Amplify Style",
             "value": "amplify-style"
-          },
-          {
-            "name": "Equity Style",
-            "value": "equity-style"
           }
         ]
       }
@@ -295,6 +291,10 @@
           {
             "name": "Card Column",
             "value": "card-column"
+          },
+          {
+            "name": "Equity Style",
+            "value": "equity-style"
           }
         ]
       }
