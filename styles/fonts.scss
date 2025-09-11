@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('../fonts//Ubuntu-Medium.ttf') format('truetype');
+  src: url('/fonts/Ubuntu-Medium.ttf') format('ttf');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('../fonts//Ubuntu-Bold.ttf') format('truetype');
+  src: url('/fonts/Ubuntu-Bold.ttf') format('ttf');
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('../fonts//Ubuntu-R.ttf') format('truetype');
+  src: url('/fonts/Ubuntu-R.ttf') format('ttf');
 }
 
 @font-face {
@@ -27,5 +27,5 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url('../fonts//Ubuntu-Th.ttf') format('truetype');
+  src: url('/fonts/Ubuntu-Th.ttf') format('ttf');
 }
