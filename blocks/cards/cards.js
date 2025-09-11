@@ -22,17 +22,13 @@ export default function decorate(block) {
   block.textContent = '';
   block.append(ul);
 
-  const cards = document.querySelectorAll('.common-cards');
-  console.log('Found cards:', cards.length);
+  const cards = block.closest('.common-cards');
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      console.log('Observed:', entry.target, 'isIntersecting:', entry.isIntersecting);
-
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
         entry.target.classList.remove('hidden');
-        console.log('→ Made visible:', entry.target);
         observer.unobserve(entry.target);
       }
     });
@@ -42,8 +38,8 @@ export default function decorate(block) {
     threshold: 0, // trigger as soon as it touches viewport
   });
 
-  cards.forEach((card) => {
-    card.classList.add('hidden');
-    observer.observe(card);
-  });
+  // cards.classList.add('hidden');
+  observer.observe(cards);
+  // cards.forEach((card) => {
+  // });
 }

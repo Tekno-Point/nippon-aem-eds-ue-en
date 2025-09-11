@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
  * Swiper 11.2.8
  * Most modern mobile touch slider and framework with hardware accelerated transitions

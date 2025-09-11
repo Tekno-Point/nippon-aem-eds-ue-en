@@ -1,8 +1,6 @@
 import Swiper from './swiper.js';
 
 export default function decorate(block) {
-  console.log('Carousel block detected');
-
   // Prepare Swiper wrapper
   block.classList.add('swiper');
   const swiperWrapper = document.createElement('div');
@@ -67,17 +65,15 @@ export default function decorate(block) {
                  || block.parentElement?.previousElementSibling?.querySelector('ul');
 
   if (!externalUl) {
-    console.warn('Carousel Not Found');
+    console.warn('Carousel Not Found'); // eslint-disable-line no-console
     return;
   }
 
   const externalLis = externalUl.querySelectorAll('li');
-  console.log('✅ Found tabs:', externalLis);
 
   // ✅ Bind <li> clicks → Swiper slide
   externalLis.forEach((li, index) => {
     li.addEventListener('click', () => {
-      console.log(`👉 Tab clicked: ${index}`);
       swiperInstance.slideTo(index);
     });
   });
