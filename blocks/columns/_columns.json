@@ -74,6 +74,10 @@
           {
             "name": "Equity Style",
             "value": "equity-style"
+          },
+          {
+            "name": "Private Credit Style",
+            "value": "private-credit-style"
           }
         ]
       }
