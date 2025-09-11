@@ -291,6 +291,10 @@
           {
             "name": "Common style",
             "value": "common-style"
+          },
+          {
+            "name": "Card Column",
+            "value": "card-column"
           }
         ]
       }

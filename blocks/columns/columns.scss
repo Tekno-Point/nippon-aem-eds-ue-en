@@ -950,3 +950,34 @@ padding-top: 10px;
 }
 }
 
+// Equity Component
+
+.section.equity-style .columns > div{
+  gap:130px
+}
+
+.section.equity-style .columns div > div:nth-child(1){
+  flex: 1 0 50%;
+}
+
+.section.equity-style .columns div > div:nth-child(2) p{
+    font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: 'ubuntu regular',sans-serif;
+  color: rgb(74 74 74);
+}
+
+@media (width <= 768px){
+  .section.equity-style{
+    padding-top: 24px;
+  }
+
+  .section.equity-style .columns > div{
+  gap:24px
+}
+
+.section.equity-style .columns div > div:nth-child(1){
+  flex: 1 0 100%;
+}
+}
